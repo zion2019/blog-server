@@ -1,0 +1,276 @@
+2019-09-07:17:37:34.560 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3c7c5c6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:17:37:49.779 [main] INFO   The following profiles are active: dev
+2019-09-07:17:37:50.989 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-07:17:37:51.120 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2062596f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:17:37:51.145 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3c7c5c6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:17:37:51.488 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-07:17:37:51.505 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-07:17:37:51.515 [main] INFO   Starting service [Tomcat]
+2019-09-07:17:37:51.515 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-07:17:37:51.775 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-07:17:37:51.775 [main] INFO   Root WebApplicationContext: initialization completed in 1972 ms
+2019-09-07:17:37:51.889 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:17:37:51.900 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a2d867d
+2019-09-07:17:37:57.798 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:17:37:58.070 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-07:17:38:03.873 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-07:17:38:03.981 [main] INFO   Setting initial instance status as: STARTING
+2019-09-07:17:38:04.109 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-07:17:38:04.459 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-07:17:38:04.459 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-07:17:38:04.732 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-07:17:38:04.733 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-07:17:38:05.040 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-07:17:38:05.070 [main] INFO   Disable delta property : false
+2019-09-07:17:38:05.070 [main] INFO   Single vip registry refresh property : null
+2019-09-07:17:38:05.070 [main] INFO   Force full registry fetch : false
+2019-09-07:17:38:05.070 [main] INFO   Application is null : false
+2019-09-07:17:38:05.070 [main] INFO   Registered Applications size is zero : true
+2019-09-07:17:38:05.070 [main] INFO   Application version is -1: true
+2019-09-07:17:38:05.070 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-07:17:38:05.178 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-07:17:38:05.180 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-07:17:38:05.184 [main] INFO   Discovery Client initialized at timestamp 1567849085183 with initial instances count: 0
+2019-09-07:17:38:05.187 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-07:17:38:05.187 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567849085187, current=UP, previous=STARTING]
+2019-09-07:17:38:05.190 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001: registering service...
+2019-09-07:17:38:05.224 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-07:17:38:05.289 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-07:17:38:05.290 [main] INFO   Updating port to 8001
+2019-09-07:17:38:05.293 [main] INFO   Started UserApplication in 46.466 seconds (JVM running for 52.527)
+2019-09-07:17:38:06.195 [RMI TCP Connection(11)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-07:17:38:06.195 [RMI TCP Connection(11)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-07:17:38:06.204 [RMI TCP Connection(10)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-07:17:38:06.224 [RMI TCP Connection(11)-127.0.0.1] INFO   Completed initialization in 29 ms
+2019-09-07:17:38:35.180 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-07:17:38:35.181 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-07:17:38:35.181 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-07:17:38:35.181 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-07:17:38:35.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-07:17:38:35.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: true
+2019-09-07:17:38:35.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-07:17:38:35.205 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001: registering service...
+2019-09-07:17:39:05.194 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-07:17:39:05.195 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-07:17:39:05.196 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-07:17:39:05.196 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-07:17:39:05.196 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-07:17:39:05.197 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: true
+2019-09-07:17:39:05.197 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-07:17:39:05.215 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001: registering service...
+2019-09-07:17:39:06.578 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:17:39:06.580 [DiscoveryClient-HeartbeatExecutor-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001 - Re-registering apps/HUAXING-PRODUCER-USER
+2019-09-07:17:39:06.580 [DiscoveryClient-HeartbeatExecutor-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001: registering service...
+2019-09-07:17:39:06.599 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-07:17:39:06.652 [DiscoveryClient-HeartbeatExecutor-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-07:17:39:36.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-07:17:39:36.724 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-07:17:43:05.096 [AsyncResolver-bootstrap-executor-0] INFO   Resolving eureka endpoints via configuration
+2019-09-07:17:48:05.107 [AsyncResolver-bootstrap-executor-0] INFO   Resolving eureka endpoints via configuration
+2019-09-07:17:53:05.118 [AsyncResolver-bootstrap-executor-0] INFO   Resolving eureka endpoints via configuration
+2019-09-07:17:58:05.986 [AsyncResolver-bootstrap-executor-0] INFO   Resolving eureka endpoints via configuration
+2019-09-07:18:02:58.082 [Thread-97] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-07:18:02:58.083 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001: registering service...
+2019-09-07:18:02:58.090 [Thread-97] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:02:58.100 [Thread-97] INFO   Shutting down DiscoveryClient ...
+2019-09-07:18:02:58.148 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:02:58.151 [Thread-97] INFO   Unregistering ...
+2019-09-07:18:02:58.215 [Thread-97] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/ziondeMacBook-Pro.local:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-07:18:02:58.227 [Thread-97] INFO   Completed shut down of DiscoveryClient
+2019-09-07:18:03:33.968 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1fbe353c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:03:44.181 [main] INFO   The following profiles are active: dev
+2019-09-07:18:03:45.544 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-07:18:03:45.665 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a4323f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:03:45.688 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1fbe353c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:03:46.116 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-07:18:03:46.135 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-07:18:03:46.146 [main] INFO   Starting service [Tomcat]
+2019-09-07:18:03:46.147 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-07:18:03:46.478 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-07:18:03:46.478 [main] INFO   Root WebApplicationContext: initialization completed in 2272 ms
+2019-09-07:18:03:46.610 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:18:03:46.622 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@16cb9989
+2019-09-07:18:03:47.500 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:18:03:47.786 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:03:48.465 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-07:18:03:48.571 [main] INFO   Setting initial instance status as: STARTING
+2019-09-07:18:03:48.614 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-07:18:03:48.886 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-07:18:03:48.886 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-07:18:03:49.000 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-07:18:03:49.001 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-07:18:03:49.258 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-07:18:03:49.275 [main] INFO   Disable delta property : false
+2019-09-07:18:03:49.275 [main] INFO   Single vip registry refresh property : null
+2019-09-07:18:03:49.275 [main] INFO   Force full registry fetch : false
+2019-09-07:18:03:49.275 [main] INFO   Application is null : false
+2019-09-07:18:03:49.275 [main] INFO   Registered Applications size is zero : true
+2019-09-07:18:03:49.275 [main] INFO   Application version is -1: true
+2019-09-07:18:03:49.275 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-07:18:03:49.582 [main] INFO   The response status is 200
+2019-09-07:18:03:49.587 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-07:18:03:49.592 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-07:18:03:49.601 [main] INFO   Discovery Client initialized at timestamp 1567850629600 with initial instances count: 0
+2019-09-07:18:03:49.606 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-07:18:03:49.607 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567850629607, current=UP, previous=STARTING]
+2019-09-07:18:03:49.611 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001: registering service...
+2019-09-07:18:03:49.659 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-07:18:03:49.704 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-07:18:03:49.705 [main] INFO   Updating port to 8001
+2019-09-07:18:03:49.707 [main] INFO   Started UserApplication in 26.511 seconds (JVM running for 32.497)
+2019-09-07:18:03:49.748 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:03:50.567 [RMI TCP Connection(6)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-07:18:03:50.568 [RMI TCP Connection(6)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-07:18:03:50.575 [RMI TCP Connection(10)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-07:18:03:50.586 [RMI TCP Connection(6)-127.0.0.1] INFO   Completed initialization in 18 ms
+2019-09-07:18:04:19.593 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-07:18:04:19.594 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-07:18:04:19.594 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-07:18:04:19.594 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-07:18:04:19.594 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-07:18:04:19.594 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-07:18:04:19.594 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-07:18:04:19.694 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-07:18:04:43.615 [http-nio-8001-exec-1] INFO   HikariPool-1 - Starting...
+2019-09-07:18:04:44.624 [http-nio-8001-exec-2] INFO   HikariPool-1 - Starting...
+2019-09-07:18:06:50.937 [Thread-58] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-07:18:06:50.938 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001: registering service...
+2019-09-07:18:06:50.950 [Thread-58] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:06:50.961 [Thread-58] INFO   Shutting down DiscoveryClient ...
+2019-09-07:18:06:50.999 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:06:51.004 [Thread-58] INFO   Unregistering ...
+2019-09-07:18:06:51.067 [Thread-58] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-07:18:06:51.077 [Thread-58] INFO   Completed shut down of DiscoveryClient
+2019-09-07:18:07:24.315 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bfc0307d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:07:34.518 [main] INFO   The following profiles are active: dev
+2019-09-07:18:07:35.555 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-07:18:07:35.665 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3a62d80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:07:35.684 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bfc0307d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:07:36.024 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-07:18:07:36.039 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-07:18:07:36.048 [main] INFO   Starting service [Tomcat]
+2019-09-07:18:07:36.048 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-07:18:07:36.289 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-07:18:07:36.290 [main] INFO   Root WebApplicationContext: initialization completed in 1753 ms
+2019-09-07:18:07:36.423 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:18:07:36.433 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3fde2209
+2019-09-07:18:07:37.211 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:18:07:37.451 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:07:38.107 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-07:18:07:38.219 [main] INFO   Setting initial instance status as: STARTING
+2019-09-07:18:07:38.268 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-07:18:07:38.505 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-07:18:07:38.506 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-07:18:07:38.639 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-07:18:07:38.640 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-07:18:07:38.882 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-07:18:07:38.898 [main] INFO   Disable delta property : false
+2019-09-07:18:07:38.899 [main] INFO   Single vip registry refresh property : null
+2019-09-07:18:07:38.899 [main] INFO   Force full registry fetch : false
+2019-09-07:18:07:38.899 [main] INFO   Application is null : false
+2019-09-07:18:07:38.899 [main] INFO   Registered Applications size is zero : true
+2019-09-07:18:07:38.899 [main] INFO   Application version is -1: true
+2019-09-07:18:07:38.899 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-07:18:07:39.172 [main] INFO   The response status is 200
+2019-09-07:18:07:39.175 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-07:18:07:39.182 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-07:18:07:39.188 [main] INFO   Discovery Client initialized at timestamp 1567850859186 with initial instances count: 0
+2019-09-07:18:07:39.192 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-07:18:07:39.192 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567850859192, current=UP, previous=STARTING]
+2019-09-07:18:07:39.198 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001: registering service...
+2019-09-07:18:07:39.251 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-07:18:07:39.294 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-07:18:07:39.295 [main] INFO   Updating port to 8001
+2019-09-07:18:07:39.298 [main] INFO   Started UserApplication in 25.733 seconds (JVM running for 31.707)
+2019-09-07:18:07:39.344 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:07:40.395 [RMI TCP Connection(8)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-07:18:07:40.395 [RMI TCP Connection(8)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-07:18:07:40.401 [RMI TCP Connection(9)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-07:18:07:40.409 [RMI TCP Connection(8)-127.0.0.1] INFO   Completed initialization in 14 ms
+2019-09-07:18:08:09.181 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-07:18:08:09.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-07:18:08:09.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-07:18:08:09.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-07:18:08:09.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-07:18:08:09.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-07:18:08:09.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-07:18:08:09.282 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-07:18:08:52.164 [http-nio-8001-exec-1] INFO   HikariPool-1 - Starting...
+2019-09-07:18:09:58.318 [Thread-57] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-07:18:09:58.320 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001: registering service...
+2019-09-07:18:09:58.332 [Thread-57] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:09:58.341 [Thread-57] INFO   Shutting down DiscoveryClient ...
+2019-09-07:18:09:58.393 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:09:58.394 [Thread-57] INFO   Unregistering ...
+2019-09-07:18:09:58.466 [Thread-57] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-07:18:09:58.478 [Thread-57] INFO   Completed shut down of DiscoveryClient
+2019-09-07:18:10:32.027 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9de4f57a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:10:42.230 [main] INFO   The following profiles are active: dev
+2019-09-07:18:10:43.390 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-07:18:10:43.502 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81caf27d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:10:43.522 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9de4f57a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-07:18:10:43.890 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-07:18:10:43.908 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-07:18:10:43.917 [main] INFO   Starting service [Tomcat]
+2019-09-07:18:10:43.918 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-07:18:10:44.170 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-07:18:10:44.170 [main] INFO   Root WebApplicationContext: initialization completed in 1921 ms
+2019-09-07:18:10:44.311 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:18:10:44.322 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5d7dd549
+2019-09-07:18:10:45.141 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-07:18:10:45.397 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:10:46.053 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-07:18:10:46.157 [main] INFO   Setting initial instance status as: STARTING
+2019-09-07:18:10:46.195 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-07:18:10:46.425 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-07:18:10:46.425 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-07:18:10:46.556 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-07:18:10:46.556 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-07:18:10:46.804 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-07:18:10:46.830 [main] INFO   Disable delta property : false
+2019-09-07:18:10:46.830 [main] INFO   Single vip registry refresh property : null
+2019-09-07:18:10:46.830 [main] INFO   Force full registry fetch : false
+2019-09-07:18:10:46.830 [main] INFO   Application is null : false
+2019-09-07:18:10:46.830 [main] INFO   Registered Applications size is zero : true
+2019-09-07:18:10:46.830 [main] INFO   Application version is -1: true
+2019-09-07:18:10:46.830 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-07:18:10:47.106 [main] INFO   The response status is 200
+2019-09-07:18:10:47.109 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-07:18:10:47.118 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-07:18:10:47.124 [main] INFO   Discovery Client initialized at timestamp 1567851047122 with initial instances count: 0
+2019-09-07:18:10:47.127 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-07:18:10:47.127 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567851047127, current=UP, previous=STARTING]
+2019-09-07:18:10:47.130 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001: registering service...
+2019-09-07:18:10:47.177 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-07:18:10:47.222 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-07:18:10:47.223 [main] INFO   Updating port to 8001
+2019-09-07:18:10:47.227 [main] INFO   Started UserApplication in 25.982 seconds (JVM running for 32.01)
+2019-09-07:18:10:47.253 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:10:48.184 [RMI TCP Connection(10)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-07:18:10:48.198 [RMI TCP Connection(9)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-07:18:10:48.199 [RMI TCP Connection(9)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-07:18:10:48.216 [RMI TCP Connection(9)-127.0.0.1] INFO   Completed initialization in 17 ms
+2019-09-07:18:11:17.116 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-07:18:11:17.117 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-07:18:11:17.117 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-07:18:11:17.117 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-07:18:11:17.117 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-07:18:11:17.117 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-07:18:11:17.117 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-07:18:11:17.210 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-07:18:11:47.013 [http-nio-8001-exec-1] INFO   HikariPool-1 - Starting...
+2019-09-07:18:15:46.833 [AsyncResolver-bootstrap-executor-0] INFO   Resolving eureka endpoints via configuration
+2019-09-07:18:17:09.893 [Thread-57] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-07:18:17:09.894 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001: registering service...
+2019-09-07:18:17:09.901 [Thread-57] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-07:18:17:09.906 [Thread-57] INFO   Shutting down DiscoveryClient ...
+2019-09-07:18:17:09.952 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - registration status: 204
+2019-09-07:18:17:09.953 [Thread-57] INFO   Unregistering ...
+2019-09-07:18:17:10.009 [Thread-57] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.1.100:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-07:18:17:10.029 [Thread-57] INFO   Completed shut down of DiscoveryClient

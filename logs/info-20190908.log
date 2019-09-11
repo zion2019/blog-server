@@ -1,0 +1,594 @@
+2019-09-08:12:38:05.847 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e0005888] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:38:16.111 [main] INFO   The following profiles are active: dev
+2019-09-08:12:38:17.432 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:12:38:17.591 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3e6558b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:38:17.618 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e0005888] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:38:18.104 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:12:38:18.126 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:38:18.139 [main] INFO   Starting service [Tomcat]
+2019-09-08:12:38:18.140 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:12:38:18.449 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:12:38:18.449 [main] INFO   Root WebApplicationContext: initialization completed in 2313 ms
+2019-09-08:12:38:18.605 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:38:18.621 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@8fcc534
+2019-09-08:12:38:19.640 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:38:19.882 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:38:20.624 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:12:38:20.736 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:12:38:20.804 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:12:38:21.174 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:12:38:21.174 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:12:38:21.360 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:12:38:21.361 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:12:38:21.658 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:12:38:21.686 [main] INFO   Disable delta property : false
+2019-09-08:12:38:21.686 [main] INFO   Single vip registry refresh property : null
+2019-09-08:12:38:21.686 [main] INFO   Force full registry fetch : false
+2019-09-08:12:38:21.686 [main] INFO   Application is null : false
+2019-09-08:12:38:21.686 [main] INFO   Registered Applications size is zero : true
+2019-09-08:12:38:21.686 [main] INFO   Application version is -1: true
+2019-09-08:12:38:21.686 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:38:22.042 [main] INFO   The response status is 200
+2019-09-08:12:38:22.044 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:12:38:22.047 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:12:38:22.052 [main] INFO   Discovery Client initialized at timestamp 1567917502049 with initial instances count: 0
+2019-09-08:12:38:22.055 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:12:38:22.056 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567917502056, current=UP, previous=STARTING]
+2019-09-08:12:38:22.058 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:38:22.113 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:38:22.161 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:12:38:22.162 [main] INFO   Updating port to 8001
+2019-09-08:12:38:22.165 [main] INFO   Started UserApplication in 27.82 seconds (JVM running for 35.843)
+2019-09-08:12:38:22.234 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:38:23.271 [RMI TCP Connection(6)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:38:23.497 [RMI TCP Connection(4)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:12:38:23.497 [RMI TCP Connection(4)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:12:38:23.556 [RMI TCP Connection(4)-127.0.0.1] INFO   Completed initialization in 54 ms
+2019-09-08:12:38:40.561 [http-nio-8001-exec-1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-08:12:38:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:38:52.204 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-08:12:39:47.325 [http-nio-8001-exec-3] INFO   HikariPool-1 - Starting...
+2019-09-08:12:40:38.156 [Thread-63] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:12:40:38.157 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:40:38.168 [Thread-63] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:40:38.174 [Thread-63] INFO   Shutting down DiscoveryClient ...
+2019-09-08:12:41:09.176 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ec9395d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:41:19.534 [main] INFO   The following profiles are active: dev
+2019-09-08:12:41:20.797 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:12:41:20.926 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32af3660] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:41:20.955 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ec9395d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:41:21.554 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:12:41:21.571 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:41:21.581 [main] INFO   Starting service [Tomcat]
+2019-09-08:12:41:21.581 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:12:41:21.851 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:12:41:21.851 [main] INFO   Root WebApplicationContext: initialization completed in 2298 ms
+2019-09-08:12:41:21.979 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:41:21.991 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@52a7928a
+2019-09-08:12:41:23.217 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:41:23.667 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:41:24.903 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:12:41:25.122 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:12:41:25.183 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:12:41:25.504 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:12:41:25.504 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:12:41:25.620 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:12:41:25.620 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:12:41:25.846 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:12:41:25.862 [main] INFO   Disable delta property : false
+2019-09-08:12:41:25.862 [main] INFO   Single vip registry refresh property : null
+2019-09-08:12:41:25.862 [main] INFO   Force full registry fetch : false
+2019-09-08:12:41:25.862 [main] INFO   Application is null : false
+2019-09-08:12:41:25.862 [main] INFO   Registered Applications size is zero : true
+2019-09-08:12:41:25.862 [main] INFO   Application version is -1: true
+2019-09-08:12:41:25.862 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:41:26.269 [main] INFO   The response status is 200
+2019-09-08:12:41:26.272 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:12:41:26.275 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:12:41:26.279 [main] INFO   Discovery Client initialized at timestamp 1567917686278 with initial instances count: 1
+2019-09-08:12:41:26.282 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:12:41:26.283 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567917686283, current=UP, previous=STARTING]
+2019-09-08:12:41:26.286 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:41:26.342 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:41:26.451 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:41:26.461 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:12:41:26.463 [main] INFO   Updating port to 8001
+2019-09-08:12:41:26.468 [main] INFO   Started UserApplication in 28.131 seconds (JVM running for 34.484)
+2019-09-08:12:41:27.648 [RMI TCP Connection(5)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:12:41:27.648 [RMI TCP Connection(5)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:12:41:27.650 [RMI TCP Connection(6)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:41:27.661 [RMI TCP Connection(5)-127.0.0.1] INFO   Completed initialization in 13 ms
+2019-09-08:12:41:31.428 [Thread-62] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:12:41:31.429 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:41:31.452 [Thread-62] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:41:31.468 [Thread-62] INFO   Shutting down DiscoveryClient ...
+2019-09-08:12:41:31.545 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:41:31.547 [Thread-62] INFO   Unregistering ...
+2019-09-08:12:47:57.158 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$33782605] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:48:07.381 [main] INFO   The following profiles are active: dev
+2019-09-08:12:48:08.440 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:12:48:08.560 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$175e2308] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:48:08.581 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$33782605] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:48:08.907 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:12:48:08.923 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:48:08.932 [main] INFO   Starting service [Tomcat]
+2019-09-08:12:48:08.932 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:12:48:09.162 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:12:48:09.162 [main] INFO   Root WebApplicationContext: initialization completed in 1763 ms
+2019-09-08:12:48:09.272 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:48:09.281 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6897a4a
+2019-09-08:12:48:10.063 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:48:10.300 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:48:10.967 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:12:48:11.083 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:12:48:11.122 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:12:48:11.345 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:12:48:11.345 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:12:48:11.482 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:12:48:11.482 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:12:48:11.714 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:12:48:11.733 [main] INFO   Disable delta property : false
+2019-09-08:12:48:11.733 [main] INFO   Single vip registry refresh property : null
+2019-09-08:12:48:11.733 [main] INFO   Force full registry fetch : false
+2019-09-08:12:48:11.733 [main] INFO   Application is null : false
+2019-09-08:12:48:11.733 [main] INFO   Registered Applications size is zero : true
+2019-09-08:12:48:11.733 [main] INFO   Application version is -1: true
+2019-09-08:12:48:11.733 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:48:12.005 [main] INFO   The response status is 200
+2019-09-08:12:48:12.007 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:12:48:12.009 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:12:48:12.013 [main] INFO   Discovery Client initialized at timestamp 1567918092012 with initial instances count: 0
+2019-09-08:12:48:12.016 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:12:48:12.016 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567918092016, current=UP, previous=STARTING]
+2019-09-08:12:48:12.019 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:48:12.070 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:48:12.114 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:12:48:12.115 [main] INFO   Updating port to 8001
+2019-09-08:12:48:12.118 [main] INFO   Started UserApplication in 25.876 seconds (JVM running for 32.142)
+2019-09-08:12:48:12.153 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:48:13.125 [RMI TCP Connection(7)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:48:13.133 [RMI TCP Connection(8)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:12:48:13.134 [RMI TCP Connection(8)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:12:48:13.150 [RMI TCP Connection(8)-127.0.0.1] INFO   Completed initialization in 16 ms
+2019-09-08:12:48:42.011 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-08:12:48:42.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-08:12:48:42.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-08:12:48:42.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-08:12:48:42.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-08:12:48:42.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-08:12:48:42.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:48:42.116 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-08:12:49:23.612 [Thread-57] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:12:49:23.615 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:49:23.625 [Thread-57] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:49:23.629 [Thread-57] INFO   Shutting down DiscoveryClient ...
+2019-09-08:12:49:23.679 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:49:23.680 [Thread-57] INFO   Unregistering ...
+2019-09-08:12:49:23.741 [Thread-57] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-08:12:49:23.752 [Thread-57] INFO   Completed shut down of DiscoveryClient
+2019-09-08:12:49:53.138 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a4f4de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:50:03.369 [main] INFO   The following profiles are active: dev
+2019-09-08:12:50:04.380 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:12:50:04.486 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e48af1e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:50:04.506 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a4f4de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:50:04.824 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:12:50:04.839 [main] INFO   Initializing ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:50:04.848 [main] INFO   Starting service [Tomcat]
+2019-09-08:12:50:04.848 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:12:50:05.065 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:12:50:05.065 [main] INFO   Root WebApplicationContext: initialization completed in 1679 ms
+2019-09-08:12:50:05.169 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:50:05.178 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7b96de8d
+2019-09-08:12:50:05.893 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:50:06.099 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:50:06.735 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:12:50:06.840 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:12:50:06.877 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:12:50:07.068 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:12:50:07.068 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:12:50:07.182 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:12:50:07.182 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:12:50:07.389 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:12:50:07.405 [main] INFO   Disable delta property : false
+2019-09-08:12:50:07.406 [main] INFO   Single vip registry refresh property : null
+2019-09-08:12:50:07.406 [main] INFO   Force full registry fetch : false
+2019-09-08:12:50:07.406 [main] INFO   Application is null : false
+2019-09-08:12:50:07.406 [main] INFO   Registered Applications size is zero : true
+2019-09-08:12:50:07.406 [main] INFO   Application version is -1: true
+2019-09-08:12:50:07.406 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:50:07.644 [main] INFO   The response status is 200
+2019-09-08:12:50:07.646 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:12:50:07.649 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:12:50:07.652 [main] INFO   Discovery Client initialized at timestamp 1567918207651 with initial instances count: 0
+2019-09-08:12:50:07.655 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:12:50:07.656 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567918207656, current=UP, previous=STARTING]
+2019-09-08:12:50:07.658 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:50:07.702 [main] INFO   Starting ProtocolHandler ["http-nio-8001"]
+2019-09-08:12:50:07.751 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:12:50:07.752 [main] INFO   Updating port to 8001
+2019-09-08:12:50:07.754 [main] INFO   Started UserApplication in 25.484 seconds (JVM running for 31.514)
+2019-09-08:12:50:07.789 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:50:08.496 [RMI TCP Connection(7)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:12:50:08.497 [RMI TCP Connection(7)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:12:50:08.508 [RMI TCP Connection(10)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:50:08.511 [RMI TCP Connection(7)-127.0.0.1] INFO   Completed initialization in 14 ms
+2019-09-08:12:50:37.649 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-08:12:50:37.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-08:12:50:37.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-08:12:50:37.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-08:12:50:37.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-08:12:50:37.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-08:12:50:37.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:50:37.747 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-08:12:51:03.245 [http-nio-8001-exec-1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:52:59.449 [http-nio-8001-exec-3] INFO   HikariPool-1 - Starting...
+2019-09-08:12:53:11.568 [http-nio-8001-exec-5] INFO   HikariPool-1 - Starting...
+2019-09-08:12:53:30.967 [Thread-56] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:12:53:30.970 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:53:30.976 [Thread-56] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:53:30.980 [Thread-56] INFO   Shutting down DiscoveryClient ...
+2019-09-08:12:53:31.036 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:53:31.039 [Thread-56] INFO   Unregistering ...
+2019-09-08:12:53:31.105 [Thread-56] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-08:12:55:08.117 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$42b09e55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:55:18.478 [main] INFO   The following profiles are active: dev
+2019-09-08:12:55:20.474 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:12:55:20.618 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26969b58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:55:20.640 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$42b09e55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:12:55:21.328 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:12:55:22.190 [main] INFO   Starting service [Tomcat]
+2019-09-08:12:55:22.190 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:12:55:22.644 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:12:55:22.644 [main] INFO   Root WebApplicationContext: initialization completed in 4130 ms
+2019-09-08:12:55:22.804 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:55:22.817 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5a2ae1ab
+2019-09-08:12:55:23.896 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:12:55:24.187 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:55:25.068 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:12:55:25.246 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:12:55:25.316 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:12:55:25.660 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:12:55:25.661 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:12:55:25.871 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:12:55:25.871 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:12:55:25.897 [main] INFO   Running in a non-OSGi environment
+2019-09-08:12:55:25.902 [main] INFO   Searching for providers that implement: interface com.sun.jersey.client.proxy.ViewProxyProvider
+2019-09-08:12:55:25.905 [main] INFO   Searching for providers that implement: interface com.sun.jersey.spi.inject.InjectableProvider
+2019-09-08:12:55:25.908 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.SAXParserContextProvider
+2019-09-08:12:55:25.908 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.XMLStreamReaderContextProvider
+2019-09-08:12:55:25.908 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.DocumentBuilderFactoryProvider
+2019-09-08:12:55:25.908 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.TransformerFactoryProvider
+2019-09-08:12:55:25.958 [main] INFO   Searching for providers that implement: interface javax.ws.rs.ext.MessageBodyReader
+2019-09-08:12:55:25.969 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StringProvider
+2019-09-08:12:55:25.969 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+2019-09-08:12:55:25.969 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FileProvider
+2019-09-08:12:55:25.969 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+2019-09-08:12:55:25.969 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+2019-09-08:12:55:25.969 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.RenderedImageProvider
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormProvider
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$App
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$Text
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$App
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$Text
+2019-09-08:12:55:25.970 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$App
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$Text
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ReaderProvider
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DocumentProvider
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+2019-09-08:12:55:25.971 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+2019-09-08:12:55:25.972 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$App
+2019-09-08:12:55:25.972 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$Text
+2019-09-08:12:55:25.972 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+2019-09-08:12:55:25.972 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+2019-09-08:12:55:25.990 [main] INFO   A dependent class, javax/mail/internet/MimeMultipart, of the component class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider is not found. The component is ignored.
+2019-09-08:12:55:26.051 [main] INFO   Searching for providers that implement: interface javax.ws.rs.ext.MessageBodyWriter
+2019-09-08:12:55:26.053 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StringProvider
+2019-09-08:12:55:26.053 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+2019-09-08:12:55:26.053 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FileProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.RenderedImageProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$App
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$Text
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$App
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$Text
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$App
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$Text
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ReaderProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DocumentProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+2019-09-08:12:55:26.054 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+2019-09-08:12:55:26.055 [main] INFO   A dependent class, javax/mail/internet/MimeMultipart, of the component class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider is not found. The component is ignored.
+2019-09-08:12:55:26.100 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:12:55:26.125 [main] INFO   Disable delta property : false
+2019-09-08:12:55:26.126 [main] INFO   Single vip registry refresh property : null
+2019-09-08:12:55:26.126 [main] INFO   Force full registry fetch : false
+2019-09-08:12:55:26.126 [main] INFO   Application is null : false
+2019-09-08:12:55:26.126 [main] INFO   Registered Applications size is zero : true
+2019-09-08:12:55:26.126 [main] INFO   Application version is -1: true
+2019-09-08:12:55:26.126 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:12:55:26.463 [main] INFO   The response status is 200
+2019-09-08:12:55:26.467 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:12:55:26.474 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:12:55:26.481 [main] INFO   Discovery Client initialized at timestamp 1567918526480 with initial instances count: 0
+2019-09-08:12:55:26.486 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:12:55:26.488 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567918526488, current=UP, previous=STARTING]
+2019-09-08:12:55:26.493 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:55:26.602 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:12:55:26.603 [main] INFO   Updating port to 8001
+2019-09-08:12:55:26.606 [main] INFO   Started UserApplication in 29.306 seconds (JVM running for 35.561)
+2019-09-08:12:55:26.648 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:55:28.926 [RMI TCP Connection(16)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:12:55:28.926 [RMI TCP Connection(16)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:12:55:28.951 [RMI TCP Connection(16)-127.0.0.1] INFO   Completed initialization in 25 ms
+2019-09-08:12:55:28.956 [RMI TCP Connection(15)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:12:55:44.498 [Thread-64] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:12:55:44.501 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:12:55:44.511 [Thread-64] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:12:55:44.516 [Thread-64] INFO   Shutting down DiscoveryClient ...
+2019-09-08:12:55:44.576 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:12:55:44.576 [Thread-64] INFO   Unregistering ...
+2019-09-08:13:11:29.939 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$76c920f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:13:11:40.209 [main] INFO   The following profiles are active: dev
+2019-09-08:13:11:41.456 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:13:11:41.569 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5aaf1df8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:13:11:41.591 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$76c920f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:13:11:42.141 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:13:11:42.760 [main] INFO   Starting service [Tomcat]
+2019-09-08:13:11:42.761 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:13:11:43.097 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:13:11:43.098 [main] INFO   Root WebApplicationContext: initialization completed in 2871 ms
+2019-09-08:13:11:43.225 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:13:11:43.236 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@539c4830
+2019-09-08:13:11:44.177 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:13:11:44.546 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:13:11:45.526 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:13:11:45.718 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:13:11:45.776 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:13:11:46.118 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:13:11:46.118 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:13:11:46.251 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:13:11:46.251 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:13:11:46.269 [main] INFO   Running in a non-OSGi environment
+2019-09-08:13:11:46.274 [main] INFO   Searching for providers that implement: interface com.sun.jersey.client.proxy.ViewProxyProvider
+2019-09-08:13:11:46.279 [main] INFO   Searching for providers that implement: interface com.sun.jersey.spi.inject.InjectableProvider
+2019-09-08:13:11:46.282 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.SAXParserContextProvider
+2019-09-08:13:11:46.282 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.XMLStreamReaderContextProvider
+2019-09-08:13:11:46.282 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.DocumentBuilderFactoryProvider
+2019-09-08:13:11:46.282 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.TransformerFactoryProvider
+2019-09-08:13:11:46.373 [main] INFO   Searching for providers that implement: interface javax.ws.rs.ext.MessageBodyReader
+2019-09-08:13:11:46.398 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StringProvider
+2019-09-08:13:11:46.398 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+2019-09-08:13:11:46.398 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FileProvider
+2019-09-08:13:11:46.399 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+2019-09-08:13:11:46.399 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+2019-09-08:13:11:46.399 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.RenderedImageProvider
+2019-09-08:13:11:46.399 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider
+2019-09-08:13:11:46.399 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormProvider
+2019-09-08:13:11:46.399 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider
+2019-09-08:13:11:46.400 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$App
+2019-09-08:13:11:46.400 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$Text
+2019-09-08:13:11:46.400 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+2019-09-08:13:11:46.400 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$App
+2019-09-08:13:11:46.400 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$Text
+2019-09-08:13:11:46.400 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$App
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$Text
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ReaderProvider
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DocumentProvider
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$App
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$Text
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+2019-09-08:13:11:46.401 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+2019-09-08:13:11:46.421 [main] INFO   A dependent class, javax/mail/internet/MimeMultipart, of the component class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider is not found. The component is ignored.
+2019-09-08:13:11:46.500 [main] INFO   Searching for providers that implement: interface javax.ws.rs.ext.MessageBodyWriter
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StringProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FileProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.RenderedImageProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$App
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$Text
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$App
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$Text
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$App
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$Text
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ReaderProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DocumentProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+2019-09-08:13:11:46.502 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+2019-09-08:13:11:46.504 [main] INFO   A dependent class, javax/mail/internet/MimeMultipart, of the component class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider is not found. The component is ignored.
+2019-09-08:13:11:46.583 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:13:11:46.621 [main] INFO   Disable delta property : false
+2019-09-08:13:11:46.621 [main] INFO   Single vip registry refresh property : null
+2019-09-08:13:11:46.621 [main] INFO   Force full registry fetch : false
+2019-09-08:13:11:46.621 [main] INFO   Application is null : false
+2019-09-08:13:11:46.621 [main] INFO   Registered Applications size is zero : true
+2019-09-08:13:11:46.621 [main] INFO   Application version is -1: true
+2019-09-08:13:11:46.621 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:13:11:46.926 [main] INFO   The response status is 200
+2019-09-08:13:11:46.933 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:13:11:46.937 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:13:11:46.943 [main] INFO   Discovery Client initialized at timestamp 1567919506941 with initial instances count: 0
+2019-09-08:13:11:46.948 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:13:11:46.949 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567919506949, current=UP, previous=STARTING]
+2019-09-08:13:11:46.952 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:13:11:47.120 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:13:11:47.124 [main] INFO   Updating port to 8001
+2019-09-08:13:11:47.131 [main] INFO   Started UserApplication in 27.968 seconds (JVM running for 33.973)
+2019-09-08:13:11:47.163 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:13:11:49.039 [RMI TCP Connection(18)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:13:11:49.039 [RMI TCP Connection(18)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:13:11:49.044 [RMI TCP Connection(16)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:13:11:49.055 [RMI TCP Connection(18)-127.0.0.1] INFO   Completed initialization in 15 ms
+2019-09-08:13:11:50.180 [RMI TCP Connection(16)-127.0.0.1] INFO   HikariPool-1 - Start completed.
+2019-09-08:13:12:16.938 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-08:13:12:16.939 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-08:13:12:16.939 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-08:13:12:16.939 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-08:13:12:16.939 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-08:13:12:16.940 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-08:13:12:16.940 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-08:13:12:17.107 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-08:13:12:27.234 [Thread-61] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:13:12:27.235 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:13:12:27.247 [Thread-61] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:13:12:27.252 [Thread-61] INFO   Shutting down DiscoveryClient ...
+2019-09-08:13:12:27.305 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:13:12:27.306 [Thread-61] INFO   Unregistering ...
+2019-09-08:13:12:27.373 [Thread-61] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-08:13:12:27.391 [Thread-61] INFO   Completed shut down of DiscoveryClient
+2019-09-08:13:12:27.392 [Thread-61] INFO   HikariPool-1 - Shutdown initiated...
+2019-09-08:13:12:27.403 [Thread-61] INFO   HikariPool-1 - Shutdown completed.
+2019-09-08:15:39:26.836 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5640037] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:15:39:37.123 [main] INFO   The following profiles are active: dev
+2019-09-08:15:39:38.469 [main] INFO   BeanFactory id=d8a2cc26-52e6-3ff6-a0d4-4ebeb25394b0
+2019-09-08:15:39:38.594 [main] INFO   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e949fd3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:15:39:38.616 [main] INFO   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5640037] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-08:15:39:39.085 [main] INFO   Tomcat initialized with port(s): 8001 (http)
+2019-09-08:15:39:39.760 [main] INFO   Starting service [Tomcat]
+2019-09-08:15:39:39.760 [main] INFO   Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-08:15:39:40.106 [main] INFO   Initializing Spring embedded WebApplicationContext
+2019-09-08:15:39:40.106 [main] INFO   Root WebApplicationContext: initialization completed in 2966 ms
+2019-09-08:15:39:40.234 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:15:39:40.246 [main] INFO   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@15d236fd
+2019-09-08:15:39:41.142 [main] INFO   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-08:15:39:41.478 [main] INFO   Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-08:15:39:42.483 [main] INFO   Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-08:15:39:42.663 [main] INFO   Setting initial instance status as: STARTING
+2019-09-08:15:39:42.743 [main] INFO   Initializing Eureka in region us-east-1
+2019-09-08:15:39:43.086 [main] INFO   Using JSON encoding codec LegacyJacksonJson
+2019-09-08:15:39:43.086 [main] INFO   Using JSON decoding codec LegacyJacksonJson
+2019-09-08:15:39:43.221 [main] INFO   Using XML encoding codec XStreamXml
+2019-09-08:15:39:43.221 [main] INFO   Using XML decoding codec XStreamXml
+2019-09-08:15:39:43.240 [main] INFO   Running in a non-OSGi environment
+2019-09-08:15:39:43.245 [main] INFO   Searching for providers that implement: interface com.sun.jersey.client.proxy.ViewProxyProvider
+2019-09-08:15:39:43.249 [main] INFO   Searching for providers that implement: interface com.sun.jersey.spi.inject.InjectableProvider
+2019-09-08:15:39:43.254 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.SAXParserContextProvider
+2019-09-08:15:39:43.254 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.XMLStreamReaderContextProvider
+2019-09-08:15:39:43.254 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.DocumentBuilderFactoryProvider
+2019-09-08:15:39:43.254 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.xml.TransformerFactoryProvider
+2019-09-08:15:39:43.312 [main] INFO   Searching for providers that implement: interface javax.ws.rs.ext.MessageBodyReader
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StringProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FileProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.RenderedImageProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$App
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$Text
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$App
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$Text
+2019-09-08:15:39:43.323 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$App
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$Text
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ReaderProvider
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DocumentProvider
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+2019-09-08:15:39:43.324 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+2019-09-08:15:39:43.325 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$App
+2019-09-08:15:39:43.325 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$Text
+2019-09-08:15:39:43.325 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+2019-09-08:15:39:43.325 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+2019-09-08:15:39:43.350 [main] INFO   A dependent class, javax/mail/internet/MimeMultipart, of the component class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider is not found. The component is ignored.
+2019-09-08:15:39:43.476 [main] INFO   Searching for providers that implement: interface javax.ws.rs.ext.MessageBodyWriter
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StringProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FileProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.RenderedImageProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.FormMultivaluedMapProvider
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$App
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$Text
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$App
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$Text
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$App
+2019-09-08:15:39:43.478 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$Text
+2019-09-08:15:39:43.479 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+2019-09-08:15:39:43.479 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.ReaderProvider
+2019-09-08:15:39:43.479 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.DocumentProvider
+2019-09-08:15:39:43.479 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+2019-09-08:15:39:43.479 [main] INFO       Provider found: class com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+2019-09-08:15:39:43.480 [main] INFO   A dependent class, javax/mail/internet/MimeMultipart, of the component class com.sun.jersey.core.impl.provider.entity.MimeMultipartProvider is not found. The component is ignored.
+2019-09-08:15:39:43.535 [main] INFO   Resolving eureka endpoints via configuration
+2019-09-08:15:39:43.563 [main] INFO   Disable delta property : false
+2019-09-08:15:39:43.563 [main] INFO   Single vip registry refresh property : null
+2019-09-08:15:39:43.563 [main] INFO   Force full registry fetch : false
+2019-09-08:15:39:43.563 [main] INFO   Application is null : false
+2019-09-08:15:39:43.563 [main] INFO   Registered Applications size is zero : true
+2019-09-08:15:39:43.563 [main] INFO   Application version is -1: true
+2019-09-08:15:39:43.563 [main] INFO   Getting all instance registry info from the eureka server
+2019-09-08:15:39:43.921 [main] INFO   The response status is 200
+2019-09-08:15:39:43.928 [main] INFO   Starting heartbeat executor: renew interval is: 30
+2019-09-08:15:39:43.932 [main] INFO   InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-08:15:39:43.942 [main] INFO   Discovery Client initialized at timestamp 1567928383939 with initial instances count: 0
+2019-09-08:15:39:43.946 [main] INFO   Registering application HUAXING-PRODUCER-USER with eureka with status UP
+2019-09-08:15:39:43.947 [main] INFO   Saw local status change event StatusChangeEvent [timestamp=1567928383947, current=UP, previous=STARTING]
+2019-09-08:15:39:43.950 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:15:39:44.100 [main] INFO   Tomcat started on port(s): 8001 (http) with context path ''
+2019-09-08:15:39:44.101 [main] INFO   Updating port to 8001
+2019-09-08:15:39:44.105 [main] INFO   Started UserApplication in 28.061 seconds (JVM running for 34.212)
+2019-09-08:15:39:44.111 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:15:39:46.273 [RMI TCP Connection(11)-127.0.0.1] INFO   Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-08:15:39:46.273 [RMI TCP Connection(11)-127.0.0.1] INFO   Initializing Servlet 'dispatcherServlet'
+2019-09-08:15:39:46.277 [RMI TCP Connection(6)-127.0.0.1] INFO   HikariPool-1 - Starting...
+2019-09-08:15:39:46.290 [RMI TCP Connection(11)-127.0.0.1] INFO   Completed initialization in 17 ms
+2019-09-08:15:39:47.356 [RMI TCP Connection(6)-127.0.0.1] INFO   HikariPool-1 - Start completed.
+2019-09-08:15:40:13.935 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Disable delta property : false
+2019-09-08:15:40:13.936 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Single vip registry refresh property : null
+2019-09-08:15:40:13.937 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Force full registry fetch : false
+2019-09-08:15:40:13.937 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application is null : false
+2019-09-08:15:40:13.937 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Registered Applications size is zero : true
+2019-09-08:15:40:13.937 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Application version is -1: false
+2019-09-08:15:40:13.937 [DiscoveryClient-CacheRefreshExecutor-0] INFO   Getting all instance registry info from the eureka server
+2019-09-08:15:40:14.082 [DiscoveryClient-CacheRefreshExecutor-0] INFO   The response status is 200
+2019-09-08:15:42:53.717 [Thread-62] INFO   Unregistering application HUAXING-PRODUCER-USER with eureka with status DOWN
+2019-09-08:15:42:53.719 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001: registering service...
+2019-09-08:15:42:53.733 [Thread-62] INFO   Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-08:15:42:53.742 [Thread-62] INFO   Shutting down DiscoveryClient ...
+2019-09-08:15:42:53.788 [DiscoveryClient-InstanceInfoReplicator-0] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - registration status: 204
+2019-09-08:15:42:53.789 [Thread-62] INFO   Unregistering ...
+2019-09-08:15:42:53.852 [Thread-62] INFO   DiscoveryClient_HUAXING-PRODUCER-USER/192.168.31.38:huaxing-producer-user:8001 - deregister  status: 200
+2019-09-08:15:42:53.861 [Thread-62] INFO   Completed shut down of DiscoveryClient
+2019-09-08:15:42:53.862 [Thread-62] INFO   HikariPool-1 - Shutdown initiated...
+2019-09-08:15:42:53.872 [Thread-62] INFO   HikariPool-1 - Shutdown completed.

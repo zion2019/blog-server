@@ -1,0 +1,32 @@
+server:
+  port: 8002
+
+spring:
+  datasource:
+    username: root
+    password: Lili_20193610379
+    url: jdbc:mysql://localhost:3306/lili_user?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: huaxing-producer-lili
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.huaxing.user.model
+
+
+#showSql
+logging:
+  level:
+    com:
+      user:
+        mapper : debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.zlld.top:8000/eureka/
+
+
+ribbon:
+  ReadTimeout: 120000
+  ConnectTimeout: 60000
