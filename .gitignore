@@ -1,12 +1,25 @@
+<<<<<<< HEAD
 ### Java template
 *.class
 
+=======
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+>>>>>>> 604dca42544e212d270ed304648db31086b88dd5
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
 *.jar
 *.war
+<<<<<<< HEAD
 *.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
@@ -92,3 +105,13 @@ buildNumber.properties
 .metadata
 
 .svn
+=======
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 604dca42544e212d270ed304648db31086b88dd5
