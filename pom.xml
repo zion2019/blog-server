@@ -12,6 +12,7 @@
         <module>cloud-user</module>
         <module>cloud-eureka-server</module>
         <module>cloud-lili</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <properties>
