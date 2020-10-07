@@ -33,7 +33,7 @@
         <!-- druid -->
         <druid.version>1.1.10</druid.version>
         <!-- mysql -->
-        <mysql.version>5.1.46</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <!-- 编译版本 -->
         <jdk.version>1.8</jdk.version>
         <!-- jwt -->
