@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.huaxing.framework</groupId>
+    <artifactId>huaxing-framework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>framework-core</module>
+        <module>framework-web</module>
+        <module>framework-datasourece</module>
+        <module>framework-cache</module>
+        <module>framework-global</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>2.1.10.RELEASE</spring-boot.version>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <lombok.version>1.18.8</lombok.version>
+        <springfox.swagger.version>2.9.2</springfox.swagger.version>
+        <boss-scratch-dependencies.version>0.0.2-SNAPSHOT</boss-scratch-dependencies.version>
+        <jedis.version>2.9.3</jedis.version>
+        <common-beanutils.version>1.9.2</common-beanutils.version>
+        <sharding-jdbc-core.version>3.1.0</sharding-jdbc-core.version>
+        <druid-spring-boot-starter.version>1.1.20</druid-spring-boot-starter.version>
+        <guava.version>20.0</guava.version>
+        <springfox.swagger.version>2.9.2</springfox.swagger.version>
+        <okhttp.version>10.2.3</okhttp.version>
+        <!-- huaxing dependencies -->
+        <huaxing.framework.version>1.0-SNAPSHOT</huaxing.framework.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-web</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-core</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <!-- Spring Boot BOM -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Cloud BOM -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- common beanutils -->
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${common-beanutils.version}</version>
+            </dependency>
+
+            <!-- 添加lombok依赖 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!--swagger-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox.swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox.swagger.version}</version>
+            </dependency>
+
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+            </dependency>
+
+            <!-- 数据库中间件 -->
+            <dependency>
+                <groupId>io.shardingsphere</groupId>
+                <artifactId>sharding-jdbc-core</artifactId>
+                <version>${sharding-jdbc-core.version}</version>
+            </dependency>
+
+            <!--google guava 工具包-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!-- druid 数据源 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+
+            <!-- jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+            <!-- fast json-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.41</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+    </dependencies>
+
+
+    <build>
+
+        <pluginManagement>
+            <plugins>
+
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+
+            <!-- 资源文件拷贝插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- 指定项目编译版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.huaxing</groupId>
+    <artifactId>huaxing-site</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>华兴系统</description>
+
+
+    <modules>
+        <module>site-eureka</module>
+        <module>site-gateway</module>
+        <module>site-mesosphere</module>
+        <module>site-system</module>
+    </modules>
+
+
+    <properties>
+        <!-- huaxing dependencies -->
+        <huaxing.framework.version>1.0-SNAPSHOT</huaxing.framework.version>
+        <!-- spring boot -->
+        <spring-boot.version>2.1.10.RELEASE</spring-boot.version>
+        <!-- spring cloud -->
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <!-- spring mybatis -->
+        <mybatis.spring.version>1.3.2</mybatis.spring.version>
+        <!-- mybatis plus -->
+        <mybatis.plus.version>3.2.0</mybatis.plus.version>
+        <!-- druid -->
+        <druid.version>1.1.10</druid.version>
+        <!-- mysql -->
+        <mysql.version>5.1.46</mysql.version>
+        <!-- 编译版本 -->
+        <jdk.version>1.8</jdk.version>
+        <!-- jwt -->
+        <jwt.version>0.9.0</jwt.version>
+        <!-- joda-time -->
+        <joda-time.version>2.9.9</joda-time.version>
+
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-web</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-core</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-datasourece</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-cache</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+
+            <!-- Spring Boot BOM -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Cloud BOM -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+
+            <!-- druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.9</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.41</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <!-- 指定项目编译版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>

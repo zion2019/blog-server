@@ -1,0 +1,22 @@
+server:
+  port: 9002                    # 指定该Eureka实例的端口
+
+# logback
+logging:
+  config: classpath:logback.xml
+  path: E:\self\logs\huaxing-site\system
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:1316/eureka/
+
+
+
+
+
+
+
+

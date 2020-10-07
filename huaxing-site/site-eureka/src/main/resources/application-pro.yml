@@ -1,0 +1,33 @@
+server:
+  port: 1316                    # 指定该Eureka实例的端口
+
+# logback
+logging:
+  config: classpath:logback.xml
+  path: /usr/local/logs/huaxing-site/eureka
+
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: huaxing #用户名
+    password: 123456 #密码
+
+eureka:
+  server:
+    enable-self-preservation: false # 关闭自我保护
+    eviction-interval-timer-in-ms: 2000 # 剔除失效服务间隔 毫秒
+  instance:
+     hostname: localhost
+     instance-id: ${spring.application.name}:${server.port}
+  client:
+    registerWithEureka: false # 设置eruka高可用性 true
+    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${security.user.name}:${security.user.password}@localhost:${server.port}/eureka/
+
+
+
+
+

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: eureka-register-server
+  profiles:
+    active:
+      - dev
