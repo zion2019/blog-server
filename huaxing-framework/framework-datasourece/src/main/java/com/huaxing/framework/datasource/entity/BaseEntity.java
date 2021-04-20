@@ -1,9 +1,6 @@
 package com.huaxing.framework.datasource.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -16,7 +13,7 @@ import java.util.Date;
 @Data
 public class BaseEntity implements Serializable {
 
-    @TableId(value = "id",type = IdType.AUTO)
+    @TableId(value = "id",type = IdType.ASSIGN_ID)
     private Long id;
     /**
      * 创建人
@@ -41,6 +38,7 @@ public class BaseEntity implements Serializable {
     /**
      * 是否删除
      */
+    @TableLogic
     @TableField(value = "deleted",fill = FieldFill.INSERT)
     private Integer deleted;
 }

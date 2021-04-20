@@ -1,7 +1,7 @@
 package com.huaxing.framework.cache.config;
 
+import cn.hutool.core.util.StrUtil;
 import com.huaxing.framework.core.utils.Assert;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ public class MyStringSerializer implements RedisSerializer<String> {
     @Override
     public String deserialize(byte[] bytes) {
         String keyPrefix = environment.getProperty("spring.application.name");
-        if(StringUtils.isBlank(keyPrefix)) {
+        if(StrUtil.isBlank(keyPrefix)) {
         	keyPrefix = "huaxing-common";
         }
         String saveKey = new String ( bytes, charset );
@@ -50,7 +50,7 @@ public class MyStringSerializer implements RedisSerializer<String> {
     @Override
     public byte[] serialize(String string) {
     	String keyPrefix = environment.getProperty("spring.application.name");
-    	if(StringUtils.isBlank(keyPrefix)) {
+    	if(StrUtil.isBlank(keyPrefix)) {
         	keyPrefix = "huaxing-common";
         }
         String key = keyPrefix +":"+ string;

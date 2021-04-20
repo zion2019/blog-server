@@ -1,6 +1,6 @@
 package com.huaxing.framework.core.utils;
 
-import org.apache.commons.lang3.StringUtils;
+import cn.hutool.core.util.StrUtil;
 import org.joda.time.*;
 
 import java.text.ParseException;
@@ -301,8 +301,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位秒
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 秒
 	 */
 	public static long subtract(Date startDate, Date endDate) {
@@ -313,8 +311,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位秒
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 秒
 	 */
 	public static long subtract(String startDate, String endDate) {
@@ -333,8 +329,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差 -单位分钟
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 分钟
 	 */
 	public static int subtractMinute(String startDate, String endDate) {
@@ -353,8 +347,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位分钟
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 分钟
 	 */
 	public static int subtractMinute(Date startDate, Date endDate) {
@@ -365,8 +357,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位小时
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 小时
 	 */
 	public static int subtractHour(Date startDate, Date endDate) {
@@ -377,8 +367,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位小时
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 小时
 	 */
 	public static int subtractHour(String startDate, String endDate) {
@@ -397,8 +385,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位天
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 天
 	 */
 	public static int subtractDay(String startDate, String endDate) {
@@ -417,8 +403,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位天
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 天
 	 */
 	public static int subtractDay(Date startDate, Date endDate) {
@@ -441,8 +425,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位月
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 月
 	 */
 	public static int subtractMonth(String startDate, String endDate) {
@@ -471,8 +453,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位月
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 月
 	 */
 	public static int subtractMonth(Date startDate, Date endDate) {
@@ -496,8 +476,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位年
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 年
 	 */
 	public static int subtractYear(String startDate, String endDate) {
@@ -520,8 +498,6 @@ public class DateUtil {
 	/**
 	 * 时间date1和date2的时间差-单位年
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 年
 	 */
 	public static int subtractYear(Date startDate, Date endDate) {
@@ -539,8 +515,6 @@ public class DateUtil {
 	/**
 	 * 获取俩个时间的查结果用时秒表示
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 几小时:几分钟:几秒钟
 	 * @Summary:此处可以讲计算结果包装成一个结构体返回便于格式化
 	 */
@@ -563,8 +537,6 @@ public class DateUtil {
 	/**
 	 * 获取俩个时间的查结果用时秒表示
 	 *
-	 * @param date1
-	 * @param date2
 	 * @return 几天-几小时:几分钟:几秒钟
 	 * @Summary:此处可以讲计算结果包装成一个结构体返回便于格式化
 	 */
@@ -1050,7 +1022,7 @@ public class DateUtil {
      * @return 
      */  
     public static String getWeekPoint(Integer year, Integer month, Integer day) {  
-        LocalDate dts = new LocalDate(year, month, day);  
+        LocalDate dts = new LocalDate(year, month, day);
         String week = null;  
         switch (dts.getDayOfWeek()) {  
         case DateTimeConstants.SUNDAY:  
@@ -1199,12 +1171,12 @@ public class DateUtil {
         DateTime dt;  
         TimeZone timeZone;  
         try {  
-            if (StringUtils.isBlank(zimeZone)) {
+            if (StrUtil.isBlank(zimeZone)) {
                 timeZone = TimeZone.getDefault();  
             } else {  
                 timeZone = TimeZone.getTimeZone(zimeZone);  
             }  
-            if (StringUtils.isBlank(date)) {
+            if (StrUtil.isBlank(date)) {
                 dt = new DateTime().withZone(DateTimeZone.forTimeZone(timeZone)).toLocalDateTime().toDateTime();  
             } else {  
                 dt = new DateTime(date).withZone(DateTimeZone.forTimeZone(timeZone)).toLocalDateTime().toDateTime();  
@@ -1226,12 +1198,12 @@ public class DateUtil {
         DateTime dt;  
         TimeZone timeZone;  
         try {  
-            if (StringUtils.isBlank(zimeZone)) {
+            if (StrUtil.isBlank(zimeZone)) {
                 timeZone = TimeZone.getDefault();  
             } else {  
                 timeZone = TimeZone.getTimeZone(zimeZone);  
             }  
-            if (StringUtils.isBlank(date)) {
+            if (StrUtil.isBlank(date)) {
   
                 dt = new DateTime().withZone(DateTimeZone.forTimeZone(timeZone)).toLocalDateTime().toDateTime();  
             } else {  

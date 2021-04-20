@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Locale;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
+import cn.hutool.core.util.StrUtil;
 import org.springframework.context.MessageSource;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
@@ -57,25 +57,25 @@ public class Assert extends org.springframework.util.Assert {
 	}
 	
 	public static void isBlank(String str, String errorKey) {
-		if (StringUtils.isBlank(str)) {
+		if (StrUtil.isBlank(str)) {
 			throw new HbException(errorKey,getLocaleMsg(errorKey,null));
 		}
 	}
 	
 	public static void isBlank(String str, String errorKey,Object[] params) {
-		if (StringUtils.isBlank(str)) {
+		if (StrUtil.isBlank(str)) {
 			throw new HbException(errorKey,getLocaleMsg(errorKey,params));
 		}
 	}
 
 	public static void notBlank(String str, String errorKey) {
-		if (StringUtils.isNotBlank(str)) {
+		if (StrUtil.isNotBlank(str)) {
 			throw new HbException(errorKey,getLocaleMsg(errorKey,null));
 		}
 	}
 	
 	public static void notBlank(String str, String errorKey,Object[] params) {
-		if (StringUtils.isNotBlank(str)) {
+		if (StrUtil.isNotBlank(str)) {
 			throw new HbException(errorKey,getLocaleMsg(errorKey,params));
 		}
 	}
@@ -213,8 +213,8 @@ public class Assert extends org.springframework.util.Assert {
 
 	public static void doesNotContain(String textToSearch, String substring,
 			String errorKey) {
-		if (!StringUtils.isEmpty(textToSearch)
-				&& !StringUtils.isEmpty(substring)
+		if (!StrUtil.isEmpty(textToSearch)
+				&& !StrUtil.isEmpty(substring)
 				&& textToSearch.contains(substring)) {
 			throw new HbException(errorKey,getLocaleMsg(errorKey,null));
 		}
@@ -222,8 +222,8 @@ public class Assert extends org.springframework.util.Assert {
 	
 	public static void doesNotContain(String textToSearch, String substring,
 			String errorKey,Object[] params) {
-		if (!StringUtils.isEmpty(textToSearch)
-				&& !StringUtils.isEmpty(substring)
+		if (!StrUtil.isEmpty(textToSearch)
+				&& !StrUtil.isEmpty(substring)
 				&& textToSearch.contains(substring)) {
 			throw new HbException(errorKey,getLocaleMsg(errorKey,params));
 		}
@@ -242,7 +242,7 @@ public class Assert extends org.springframework.util.Assert {
 	public static void isInstanceOf(Class<?> type, Object obj, String errorKey) {
 		notNull(type, "Type to check against must not be null");
 		if (!type.isInstance(obj)) {
-			if (StringUtils.isNotEmpty(errorKey)) {
+			if (StrUtil.isNotEmpty(errorKey)) {
 				throw new HbException(errorKey,getLocaleMsg(errorKey,null));
 			} else {
 				String errorMessage = "Object of class ["
@@ -256,7 +256,7 @@ public class Assert extends org.springframework.util.Assert {
 	public static void isInstanceOf(Class<?> type, Object obj, String errorKey,Object[] params) {
 		notNull(type, "Type to check against must not be null");
 		if (!type.isInstance(obj)) {
-			if (StringUtils.isNotEmpty(errorKey)) {
+			if (StrUtil.isNotEmpty(errorKey)) {
 				throw new HbException(errorKey,getLocaleMsg(errorKey,params));
 			} else {
 				String errorMessage = "Object of class ["

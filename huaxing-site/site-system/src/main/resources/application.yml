@@ -1,9 +1,0 @@
-server:
-  port: 9002  # 指定该Eureka实例的端口
-
-spring:
-  application:
-    name: system-server
-  profiles:
-    active:
-      - dev

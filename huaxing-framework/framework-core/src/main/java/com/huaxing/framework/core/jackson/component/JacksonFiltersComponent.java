@@ -6,7 +6,6 @@ import com.huaxing.framework.core.jackson.core.JacksonFilterBean;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
-import org.apache.commons.lang3.reflect.FieldUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -203,7 +202,7 @@ public class JacksonFiltersComponent {
         if(clazz == null) {
             return null;
         }
-        return FieldUtils.getAllFields(clazz);
+        return clazz.getDeclaredFields();
 
     }
 

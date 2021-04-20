@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.huaxing.resource.security.service.HbUserDetailsServiceImpl,\
+  com.huaxing.resource.security.component.HbSecurityInnerAspect
+

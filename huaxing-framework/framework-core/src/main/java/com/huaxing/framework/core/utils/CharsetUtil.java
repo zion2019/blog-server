@@ -1,6 +1,7 @@
 package com.huaxing.framework.core.utils;
 
-import org.apache.commons.lang3.StringUtils;
+
+import cn.hutool.core.util.StrUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStreamWriter;
@@ -146,7 +147,7 @@ public final class CharsetUtil {
      * @return 转换完成字符串
      */
     public final static String toGBKWithUTF8(String input) throws UnsupportedEncodingException {
-        if (StringUtils.isEmpty(input)) {
+        if (StrUtil.isEmpty(input)) {
             return "";
         } else {
             String s1;
@@ -162,7 +163,7 @@ public final class CharsetUtil {
      * @return 转换完成字符串
      */
     public final static String toUnicodeWithGBK(String input) throws UnsupportedEncodingException {
-        if (StringUtils.isEmpty(input)) {
+        if (StrUtil.isEmpty(input)) {
             return "";
         } else {
             String s1;

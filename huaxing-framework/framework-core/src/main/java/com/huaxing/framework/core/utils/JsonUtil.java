@@ -3,7 +3,7 @@ package com.huaxing.framework.core.utils;
 import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 
-import org.apache.commons.lang3.StringUtils;
+import cn.hutool.core.util.StrUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,7 @@ public class JsonUtil {
 
 	public static String json(Object source, String dateformat) {
 		ObjectMapper objectMapper = new ObjectMapper();
-		if (StringUtils.isNotEmpty(dateformat)) {
+		if (StrUtil.isNotEmpty(dateformat)) {
 			objectMapper.setDateFormat(new SimpleDateFormat(dateformat));
 		}
 
@@ -90,7 +90,7 @@ public class JsonUtil {
 	public static <T> T parseJson(String json, Class<T> clazz, String dateFormat)
 			throws Exception {
 		ObjectMapper objectMapper = new ObjectMapper();
-		if (StringUtils.isNotEmpty(dateFormat)) {
+		if (StrUtil.isNotEmpty(dateFormat)) {
 			objectMapper.setDateFormat(new SimpleDateFormat(dateFormat));
 		}
 

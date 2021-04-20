@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.huaxing.framework.feign.HbFeignAutoConfiguration,\
+    com.huaxing.framework.feign.handle.GlobalBizExceptionHandler

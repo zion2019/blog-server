@@ -19,12 +19,11 @@
             <artifactId>framework-core</artifactId>
         </dependency>
 
-
         <!-- mybatis plus -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
+            <version>${mybatis-plus-version}</version>
         </dependency>
 
         <!-- 多数据源配置 -->

@@ -11,31 +11,60 @@
 
     <artifactId>framework-web</artifactId>
 
-
     <dependencies>
 
+        <!--bootstrap 启动器-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+
+        <!-- 框架核心 -->
         <dependency>
             <groupId>com.huaxing.framework</groupId>
             <artifactId>framework-core</artifactId>
-            <version>${huaxing.framework.version}</version>
         </dependency>
 
+        <!-- web服务一定链接数据库 -->
+        <dependency>
+            <groupId>com.huaxing.framework</groupId>
+            <artifactId>framework-datasourece</artifactId>
+        </dependency>
+
+        <!-- spring boot web 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--注册中心客户端-->
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!--接口文档-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.fox.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.fox.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-oas</artifactId>
+            <version>${swagger.fox.version}</version>
         </dependency>
 
     </dependencies>
-
-
 </project>

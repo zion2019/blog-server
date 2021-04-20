@@ -12,17 +12,18 @@
         <module>framework-web</module>
         <module>framework-datasourece</module>
         <module>framework-cache</module>
-        <module>framework-global</module>
+        <module>framework-feign</module>
     </modules>
 
     <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-boot.version>2.1.10.RELEASE</spring-boot.version>
+        <spring-boot.version>2.4.4</spring-boot.version>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <spring-cloud.version>2020.0.2</spring-cloud.version>
+        <spring-cloud-alibaba.version>2020.0.RC1</spring-cloud-alibaba.version>
         <lombok.version>1.18.8</lombok.version>
         <springfox.swagger.version>2.9.2</springfox.swagger.version>
         <boss-scratch-dependencies.version>0.0.2-SNAPSHOT</boss-scratch-dependencies.version>
@@ -31,24 +32,52 @@
         <sharding-jdbc-core.version>3.1.0</sharding-jdbc-core.version>
         <druid-spring-boot-starter.version>1.1.20</druid-spring-boot-starter.version>
         <guava.version>20.0</guava.version>
+        <hutool.version>5.6.3</hutool.version>
         <springfox.swagger.version>2.9.2</springfox.swagger.version>
         <okhttp.version>10.2.3</okhttp.version>
+        <mybatis-plus-version>3.4.2</mybatis-plus-version>
+        <swagger.fox.version>3.0.0</swagger.fox.version>
         <!-- huaxing dependencies -->
         <huaxing.framework.version>1.0-SNAPSHOT</huaxing.framework.version>
+        <jdk.version>1.8</jdk.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
 
+            <!--- 框架 web集成  -->
             <dependency>
                 <groupId>com.huaxing.framework</groupId>
                 <artifactId>framework-web</artifactId>
                 <version>${huaxing.framework.version}</version>
             </dependency>
+
+            <!-- 框架核心 -->
             <dependency>
                 <groupId>com.huaxing.framework</groupId>
                 <artifactId>framework-core</artifactId>
                 <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <!-- 缓存集成-->
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-cache</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <!-- 框架数据库操作 -->
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-datasourece</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <!--feign 依赖-->
+            <dependency>
+                <groupId>com.huaxing.framework</groupId>
+                <artifactId>framework-feign</artifactId>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
 
             <!-- Spring Boot BOM -->
@@ -74,13 +103,6 @@
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>${common-beanutils.version}</version>
-            </dependency>
-
-            <!-- 添加lombok依赖 -->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
             </dependency>
 
             <!--swagger-->
@@ -136,11 +158,51 @@
                 <version>1.2.41</version>
             </dependency>
 
+            <!--hutool-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <!-- spring cloud alibaba 依赖 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- 资源API -->
+            <dependency>
+                <groupId>com.huaxing.resource</groupId>
+                <artifactId>resource-api</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <!-- 鉴权集成 -->
+            <dependency>
+                <groupId>com.huaxing.resource</groupId>
+                <artifactId>resource-security</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <!-- hutool工具包 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
     </dependencies>
 
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.huaxing.framework</groupId>
+        <artifactId>huaxing-framework</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.huaxing.auth</groupId>
+    <artifactId>huaxing-auth</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>认证服务</description>
+
+    <dependencies>
+
+        <!-- 鉴权集成 -->
+        <dependency>
+            <groupId>com.huaxing.resource</groupId>
+            <artifactId>resource-security</artifactId>
+        </dependency>
+
+        <!-- 缓存集成-->
+        <dependency>
+            <groupId>com.huaxing.framework</groupId>
+            <artifactId>framework-cache</artifactId>
+        </dependency>
+
+        <!-- datasource -->
+        <dependency>
+            <groupId>com.huaxing.framework</groupId>
+            <artifactId>framework-datasourece</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
