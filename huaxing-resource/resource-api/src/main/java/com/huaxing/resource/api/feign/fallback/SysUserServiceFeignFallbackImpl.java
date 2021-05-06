@@ -2,7 +2,7 @@ package com.huaxing.resource.api.feign.fallback;
 
 import com.huaxing.framework.core.response.ResponseResult;
 import com.huaxing.resource.api.dto.SysUserInfo;
-import com.huaxing.resource.api.feign.SysUserServiceClient;
+import com.huaxing.resource.api.feign.SysUserServiceFeign;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  **/
 @Slf4j
 @Component
-public class SysUserServiceClientFallbackImpl implements SysUserServiceClient {
+public class SysUserServiceFeignFallbackImpl implements SysUserServiceFeign {
 
     @Setter
     private Throwable cause;

@@ -23,6 +23,16 @@ package com.huaxing.framework.core.constant;
 public interface CommonConstants {
 
 	/**
+	 * 开启
+	 */
+	String ENABLE_NORMAL = "1";
+
+	/**
+	 * 关闭
+	 */
+	String ENABLE_INVALID = "0";
+
+	/**
 	 * 删除
 	 */
 	String STATUS_DEL = "1";

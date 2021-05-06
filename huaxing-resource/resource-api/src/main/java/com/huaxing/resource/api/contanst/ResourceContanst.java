@@ -9,6 +9,6 @@ public class ResourceContanst {
     /**
      * 服务名称
      */
-    public static final String SERVER_NAME = "huaxing-site-resource";
+    public static final String SERVER_NAME = "resource-biz";
 
 }

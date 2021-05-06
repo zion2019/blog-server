@@ -16,6 +16,7 @@
 
 package com.huaxing.auth;
 
+import com.huaxing.framework.feign.annotation.EnableBlogFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -24,13 +25,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author lengleng
  * @date 2018年06月21日 认证授权中心
  */
-//@EnablePigFeignClients
+@EnableBlogFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class AuthApplication {
-
+public class App {
 	public static void main(String[] args) {
-		SpringApplication.run(AuthApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
-
 }

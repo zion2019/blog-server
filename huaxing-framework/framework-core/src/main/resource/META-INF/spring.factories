@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.huaxing.framework.core.configuration.MessageSourceConfig,\
+  com.huaxing.framework.core.utils.SpringBeanUtil

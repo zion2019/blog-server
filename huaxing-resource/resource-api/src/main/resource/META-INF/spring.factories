@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.huaxing.resource.api.feign.fallback.SysUserServiceFeignFallbackImpl,\
+  com.huaxing.resource.api.feign.factory.SysUserServiceFeignFactory

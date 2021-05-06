@@ -27,12 +27,12 @@ public interface CacheConstants {
 	/**
 	 * oauth 缓存前缀
 	 */
-	String PROJECT_OAUTH_ACCESS = "pig_oauth:access:";
+	String PROJECT_OAUTH_ACCESS = "huaxing_oauth:access:";
 
 	/**
 	 * oauth 缓存令牌前缀
 	 */
-	String PROJECT_OAUTH_TOKEN = "pig_oauth:token:";
+	String PROJECT_OAUTH_TOKEN = "huaxing_oauth:token:";
 
 	/**
 	 * 验证码前缀
@@ -57,7 +57,7 @@ public interface CacheConstants {
 	/**
 	 * oauth 客户端信息
 	 */
-	String CLIENT_DETAILS_KEY = "pig_oauth:client:details";
+	String CLIENT_DETAILS_KEY = "huaxing_oauth:client:details";
 
 	/**
 	 * 参数缓存

@@ -4,58 +4,64 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.huaxing.gateway</groupId>
+    <artifactId>huaxing-gateway</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
     <parent>
         <groupId>com.huaxing.framework</groupId>
         <artifactId>huaxing-framework</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.huaxing.auth</groupId>
-    <artifactId>huaxing-auth</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
     <packaging>jar</packaging>
-    <description>认证服务</description>
 
+    <description>huaxing 服务网关，基于 spring cloud gateway</description>
     <dependencies>
-
-        <!-- 核心包 -->
-        <dependency>
-            <groupId>com.huaxing.framework</groupId>
-            <artifactId>framework-web</artifactId>
-        </dependency>
-
         <!--bootstrap 启动器-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
+        <!--gateway 网关依赖,内置webflux 依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+        </dependency>
         <!--注册中心客户端-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-
         <!--配置中心客户端-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
-
-        <!-- 鉴权集成 -->
+        <!--断路器依赖-->
         <dependency>
-            <groupId>com.huaxing.resource</groupId>
-            <artifactId>resource-security</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-sentinel-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        <!-- LB 扩展 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
 
-        <!-- 缓存集成-->
         <dependency>
             <groupId>com.huaxing.framework</groupId>
-            <artifactId>framework-cache</artifactId>
+            <artifactId>framework-core</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>

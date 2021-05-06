@@ -15,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
 import java.util.jar.JarFile;
 import java.util.stream.Collectors;
@@ -69,7 +70,6 @@ public class MessageSourceConfig {
      */
     private  String[] getAllBaseNames(String baseFolder) throws Exception {
         List<String> baseNames = new ArrayList<>();
-
         URL url = Thread.currentThread().getContextClassLoader().getResource(baseFolder);
         if(null == url){
             throw new HbException("无法获取资源文件路径");

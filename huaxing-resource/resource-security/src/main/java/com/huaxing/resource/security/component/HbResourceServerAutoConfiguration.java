@@ -36,7 +36,7 @@ import java.util.Collections;
  * @date 2020-06-23
  */
 @ConfigurationPropertiesScan
-@ComponentScan("com.pig4cloud.pig.common.security")
+@ComponentScan({"com.huaxing.resource.security"})
 public class HbResourceServerAutoConfiguration {
 
 	@Bean

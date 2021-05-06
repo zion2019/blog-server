@@ -18,6 +18,12 @@
             <artifactId>spring-security-oauth2-autoconfigure</artifactId>
         </dependency>
 
+        <!-- cache -->
+        <dependency>
+            <groupId>com.huaxing.framework</groupId>
+            <artifactId>framework-cache</artifactId>
+        </dependency>
+
         <!-- 资源API -->
         <dependency>
             <groupId>com.huaxing.resource</groupId>

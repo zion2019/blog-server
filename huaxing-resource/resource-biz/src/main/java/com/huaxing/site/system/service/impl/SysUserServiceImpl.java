@@ -14,6 +14,8 @@ import com.huaxing.site.system.service.SysMenuService;
 import com.huaxing.site.system.service.SysRoleService;
 import com.huaxing.site.system.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -35,6 +37,9 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     @Override
     public SysUserInfo getUserInfoByAccount(String account) {
         SysUserInfo sysUserInfo = new SysUserInfo();
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        System.out.println(passwordEncoder.encode("123456"));
+
         // 用户基本信息
         SysUserEntity userEntity = this.getOne(new LambdaQueryWrapper<SysUserEntity>().eq(SysUserEntity::getAccount, account));
         Assert.isNull(userEntity,"user_error_001");
@@ -49,6 +54,9 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
             List<String> permissions = menuService.findPermissions(roleIds);
             sysUserInfo.setPermissions(ArrayUtil.toArray(permissions,String.class));
         }
+
+
+
         return sysUserInfo;
     }
 }

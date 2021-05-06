@@ -47,7 +47,7 @@ public @interface EnableBlogFeignClients {
 	 * package names.
 	 * @return the array of 'basePackages'.
 	 */
-	String[] basePackages() default { "com.pig4cloud.pig" };
+	String[] basePackages() default { "com.huaxing" };
 
 	/**
 	 * Type-safe alternative to {@link #basePackages()} for specifying the packages to

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.huaxing.framework.cache.config.RedisTemplateConfiguration

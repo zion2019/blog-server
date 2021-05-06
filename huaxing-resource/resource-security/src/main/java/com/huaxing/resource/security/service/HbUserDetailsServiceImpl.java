@@ -23,7 +23,7 @@ import com.huaxing.framework.core.constant.CommonConstants;
 import com.huaxing.framework.core.constant.SecurityConstants;
 import com.huaxing.framework.core.response.ResponseResult;
 import com.huaxing.resource.api.dto.SysUserInfo;
-import com.huaxing.resource.api.feign.SysUserServiceClient;
+import com.huaxing.resource.api.feign.SysUserServiceFeign;
 import com.huaxing.resource.api.vo.SysUserVo;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -52,7 +52,7 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class HbUserDetailsServiceImpl implements UserDetailsService {
 
-	private final SysUserServiceClient userServiceClient;
+	private final SysUserServiceFeign userServiceClient;
 
 	private final CacheManager cacheManager;
 
@@ -103,7 +103,7 @@ public class HbUserDetailsServiceImpl implements UserDetailsService {
 		// 构造security用户
 		return new SysUser(user.getId(), user.getName(),
 				SecurityConstants.BCRYPT + user.getPassword(),
-				StrUtil.equals(user.getEnabled()+"", CommonConstants.STATUS_NORMAL), true, true, true, authorities);
+				StrUtil.equals(user.getEnabled()+"", CommonConstants.ENABLE_NORMAL), true, true, true, authorities);
 	}
 
 }

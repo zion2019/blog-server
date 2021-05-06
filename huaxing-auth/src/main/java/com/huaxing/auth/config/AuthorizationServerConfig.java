@@ -21,6 +21,7 @@ import com.huaxing.framework.core.constant.SecurityConstants;
 import com.huaxing.resource.security.component.HbWebResponseExceptionTranslator;
 import com.huaxing.resource.security.service.HbClientDetailsService;
 import com.huaxing.resource.api.vo.SysUserVo;
+import com.huaxing.resource.security.service.SysUser;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
@@ -94,10 +95,10 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	public TokenEnhancer tokenEnhancer() {
 		return (accessToken, authentication) -> {
 			final Map<String, Object> additionalInfo = new HashMap<>(4);
-			SysUserVo user = (SysUserVo) authentication.getUserAuthentication().getPrincipal();
+			SysUser user = (SysUser) authentication.getUserAuthentication().getPrincipal();
 			additionalInfo.put(SecurityConstants.DETAILS_LICENSE, SecurityConstants.PROJECT_LICENSE);
 			additionalInfo.put(SecurityConstants.DETAILS_USER_ID, user.getId());
-			additionalInfo.put(SecurityConstants.DETAILS_USERNAME, user.getName());
+			additionalInfo.put(SecurityConstants.DETAILS_USERNAME, user.getUsername());
 			((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
 			return accessToken;
 		};
