@@ -14,7 +14,7 @@
     <artifactId>huaxing-resource</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>华兴系统</description>
+    <description>华兴系统-资源模块</description>
 
     <modules>
         <module>resource-api</module>

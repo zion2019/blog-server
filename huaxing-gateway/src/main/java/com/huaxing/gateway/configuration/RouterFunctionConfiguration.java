@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huaxing.gateway.config;
+package com.huaxing.gateway.configuration;
 
 import com.huaxing.gateway.handler.ImageCodeHandler;
 import lombok.RequiredArgsConstructor;

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.huaxing.framework.api.configuration.SwaggerConfiguration,\
+  com.huaxing.framework.api.properties.SwaggerProperties

@@ -24,7 +24,7 @@ import cn.hutool.crypto.Padding;
 import cn.hutool.crypto.symmetric.AES;
 import cn.hutool.http.HttpUtil;
 import com.huaxing.framework.core.constant.SecurityConstants;
-import com.huaxing.gateway.config.GatewayConfigProperties;
+import com.huaxing.gateway.configuration.GatewayConfigProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilter;

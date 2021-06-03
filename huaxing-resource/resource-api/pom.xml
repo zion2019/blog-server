@@ -18,12 +18,11 @@
     <!-- api层的通用配置 -->
     <dependencies>
 
-        <!--feign 依赖-->
+        <!-- APi 集成-->
         <dependency>
             <groupId>com.huaxing.framework</groupId>
-            <artifactId>framework-feign</artifactId>
+            <artifactId>framework-api</artifactId>
         </dependency>
-
     </dependencies>
 
 </project>

@@ -49,22 +49,12 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
-        <!--接口文档-->
+        <!-- security -->
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.fox.version}</version>
+            <groupId>com.huaxing.resource</groupId>
+            <artifactId>resource-security</artifactId>
         </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.fox.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-oas</artifactId>
-            <version>${swagger.fox.version}</version>
-        </dependency>
+
 
     </dependencies>
 </project>

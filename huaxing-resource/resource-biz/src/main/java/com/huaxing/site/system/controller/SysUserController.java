@@ -28,9 +28,4 @@ public class SysUserController implements SysUserServiceFeign {
     public ResponseResult<SysUserInfo> info(@PathVariable("account")String account, @RequestHeader(SecurityConstants.FROM)String from) {
         return ResponseResult.ok(userService.getUserInfoByAccount(account));
     }
-
-    @GetMapping("/say/hello")
-    public ResponseResult<String> sayHello(){
-        return ResponseResult.ok("hello");
-    }
 }

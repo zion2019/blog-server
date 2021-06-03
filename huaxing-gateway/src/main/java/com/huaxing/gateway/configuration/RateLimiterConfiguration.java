@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huaxing.gateway.config;
+package com.huaxing.gateway.configuration;
 
 import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
 import org.springframework.context.annotation.Bean;

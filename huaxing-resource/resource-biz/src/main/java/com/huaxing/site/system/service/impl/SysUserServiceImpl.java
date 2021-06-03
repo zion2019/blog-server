@@ -34,6 +34,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     @Autowired
     private SysMenuService menuService;
 
+
     @Override
     public SysUserInfo getUserInfoByAccount(String account) {
         SysUserInfo sysUserInfo = new SysUserInfo();
@@ -55,8 +56,8 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
             sysUserInfo.setPermissions(ArrayUtil.toArray(permissions,String.class));
         }
 
-
-
         return sysUserInfo;
     }
+
+
 }

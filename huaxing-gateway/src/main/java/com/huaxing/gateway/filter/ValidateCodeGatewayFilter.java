@@ -23,7 +23,7 @@ import com.huaxing.framework.core.constant.CacheConstants;
 import com.huaxing.framework.core.constant.SecurityConstants;
 import com.huaxing.framework.core.response.ResponseResult;
 import com.huaxing.framework.core.utils.WebUtils;
-import com.huaxing.gateway.config.GatewayConfigProperties;
+import com.huaxing.gateway.configuration.GatewayConfigProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -63,7 +63,7 @@ public class ValidateCodeGatewayFilter extends AbstractGatewayFilterFactory {
 				return chain.filter(exchange);
 			}
 
-			// 刷新token，直接向下执行
+			// 刷新token，直接请求头中client信息为空向下执行
 			String grantType = request.getQueryParams().getFirst("grant_type");
 			if (StrUtil.equals(SecurityConstants.REFRESH_TOKEN, grantType)) {
 				return chain.filter(exchange);
@@ -77,7 +77,7 @@ public class ValidateCodeGatewayFilter extends AbstractGatewayFilterFactory {
 				}
 
 				// 校验验证码
-				checkCode(request);
+//				checkCode(request);
 			}
 			catch (Exception e) {
 				ServerHttpResponse response = exchange.getResponse();

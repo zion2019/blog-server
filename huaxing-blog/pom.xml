@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>blog-api</module>
+        <module>blog-biz</module>
+    </modules>
+
+    <parent>
+        <groupId>com.huaxing.framework</groupId>
+        <artifactId>huaxing-framework</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.huaxing.blog</groupId>
+    <artifactId>huaxing-blog</artifactId>
+    <packaging>pom</packaging>
+    <description>华兴系统-博客模块</description>
+
+
+</project>

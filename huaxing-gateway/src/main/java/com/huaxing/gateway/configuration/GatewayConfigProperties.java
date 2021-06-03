@@ -1,4 +1,4 @@
-package com.huaxing.gateway.config;
+package com.huaxing.gateway.configuration;
 
 import com.huaxing.gateway.filter.PasswordDecoderFilter;
 import com.huaxing.gateway.filter.ValidateCodeGatewayFilter;

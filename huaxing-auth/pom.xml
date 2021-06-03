@@ -43,13 +43,6 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
-
-        <!-- 鉴权集成 -->
-        <dependency>
-            <groupId>com.huaxing.resource</groupId>
-            <artifactId>resource-security</artifactId>
-        </dependency>
-
         <!-- 缓存集成-->
         <dependency>
             <groupId>com.huaxing.framework</groupId>

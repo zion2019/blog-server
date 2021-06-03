@@ -13,19 +13,11 @@
 
     <description>资源服务（业务模块）</description>
     <dependencies>
-
         <!-- huaxing dependeneics -->
         <dependency>
             <groupId>com.huaxing.framework</groupId>
             <artifactId>framework-web</artifactId>
         </dependency>
-
-        <!-- security -->
-        <dependency>
-            <groupId>com.huaxing.resource</groupId>
-            <artifactId>resource-security</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>

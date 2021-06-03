@@ -1,7 +1,9 @@
 package com.huaxing.site.system.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.huaxing.framework.core.response.ResponseResult;
 import com.huaxing.resource.api.dto.SysUserInfo;
+import com.huaxing.resource.api.vo.SysUserLoginRequestVo;
 import com.huaxing.site.system.entity.SysUserEntity;
 
 /**
@@ -16,5 +18,6 @@ public interface SysUserService extends IService<SysUserEntity> {
      * @return
      */
     SysUserInfo getUserInfoByAccount(String account);
+
 }
 
