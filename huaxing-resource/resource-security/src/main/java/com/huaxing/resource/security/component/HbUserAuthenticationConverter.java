@@ -17,6 +17,8 @@
 package com.huaxing.resource.security.component;
 
 import com.huaxing.framework.core.constant.SecurityConstants;
+import com.huaxing.resource.api.dto.SysUserInfo;
+import com.huaxing.resource.security.service.SysUser;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -66,10 +68,10 @@ public class HbUserAuthenticationConverter implements UserAuthenticationConverte
 			Collection<? extends GrantedAuthority> authorities = getAuthorities(map);
 
 			String username = (String) map.get(SecurityConstants.DETAILS_USERNAME);
-			Integer id = (Integer) map.get(SecurityConstants.DETAILS_USER_ID);
-			Integer deptId = (Integer) map.get(SecurityConstants.DETAILS_DEPT_ID);
-//			SysUser user = new SysUser(id, deptId, username, N_A, true, true, true, true, authorities);
-//			return new UsernamePasswordAuthenticationToken(user, N_A, authorities);
+			String id = String.valueOf(map.get(SecurityConstants.DETAILS_USER_ID));
+//			Integer deptId = (Integer) map.get(SecurityConstants.DETAILS_DEPT_ID);
+			SysUser user = new SysUser(Long.parseLong(id), username, N_A, true, true, true, true, authorities);
+			return new UsernamePasswordAuthenticationToken(user, N_A, authorities);
 		}
 		return null;
 	}

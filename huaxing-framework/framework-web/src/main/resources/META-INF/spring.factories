@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.huaxing.framework.web.configuration.CustomMetaObjectUserSource
+    com.huaxing.framework.web.configuration.CustomMetaObjectUserSource,\
+    com.huaxing.framework.web.advice.ExceptionHandlerAdvice,\
+    com.huaxing.framework.web.configuration.JacksonConfig

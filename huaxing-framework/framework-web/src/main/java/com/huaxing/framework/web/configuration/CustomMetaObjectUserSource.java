@@ -13,11 +13,11 @@ public class CustomMetaObjectUserSource implements MetaObjectUserSource {
 
     @Override
     public Long getUserId() {
-        return SecurityUtils.getUser().getSysUser().getId();
+        return SecurityUtils.getUser().getId();
     }
 
     @Override
     public String getUserName() {
-        return SecurityUtils.getUser().getSysUser().getAccount();
+        return SecurityUtils.getUser().getUsername();
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.huaxing.site.system.mapper.SysMenuMapper">
+<mapper namespace="com.huaxing.resource.biz.mapper.SysMenuMapper">
     <select id="findPermissionByRoleId" resultType="java.lang.String">
         SELECT
           m.permission

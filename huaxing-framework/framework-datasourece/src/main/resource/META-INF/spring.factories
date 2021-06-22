@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.huaxing.framework.datasource.handler.MyMetaObjectHandler
+    com.huaxing.framework.datasource.handler.MyMetaObjectHandler,\
+    com.huaxing.framework.datasource.config.MybatisPlusConfig

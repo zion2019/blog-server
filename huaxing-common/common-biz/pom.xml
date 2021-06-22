@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>huaxing-common</artifactId>
+        <groupId>com.huaxing.common</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>common-biz</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.huaxing.common</groupId>
+            <artifactId>common-api</artifactId>
+        </dependency>
+
+        <!-- huaxing dependeneics web -->
+        <dependency>
+            <groupId>com.huaxing.framework</groupId>
+            <artifactId>framework-web</artifactId>
+            <exclusions>
+                <!-- 暂不需要 数据库、缓存 -->
+                <exclusion>
+                    <groupId>com.huaxing.framework</groupId>
+                    <artifactId>framework-datasourece</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.huaxing.framework</groupId>
+                    <artifactId>framework-cache</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 阿里云服务器 -->
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>3.10.2</version>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.0.1.RELEASE</version>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!--开启过滤，用指定的参数替换directory下的文件中的参数-->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+    </build>
+
+
+</project>

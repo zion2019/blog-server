@@ -1,9 +1,9 @@
 package com.huaxing.framework.core.page;
 
-import java.util.Collections;
-import java.util.List;
-
+import cn.hutool.core.collection.CollUtil;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 public class PageDto<T> {
@@ -11,7 +11,7 @@ public class PageDto<T> {
 	/**
      * 数据
      */
-    private List<T> records = Collections.emptyList();
+    private List<T> records = CollUtil.newArrayList();
 
     /**
      * 总记录数
@@ -31,5 +31,7 @@ public class PageDto<T> {
      * 总页数
      */
     private long pages = 0L;
+
+
 
 }

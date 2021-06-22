@@ -33,7 +33,7 @@
         <sharding-jdbc-core.version>3.1.0</sharding-jdbc-core.version>
         <druid-spring-boot-starter.version>1.1.20</druid-spring-boot-starter.version>
         <guava.version>20.0</guava.version>
-        <hutool.version>5.6.3</hutool.version>
+        <hutool.version>5.6.6</hutool.version>
         <knife4j.version>2.0.8</knife4j.version>
         <swagger.version>1.5.21</swagger.version>
         <okhttp.version>10.2.3</okhttp.version>
@@ -186,6 +186,12 @@
             <dependency>
                 <groupId>com.huaxing.resource</groupId>
                 <artifactId>resource-api</artifactId>
+                <version>${huaxing.framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huaxing.common</groupId>
+                <artifactId>common-api</artifactId>
                 <version>${huaxing.framework.version}</version>
             </dependency>
 

@@ -21,10 +21,11 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         Date now = new Date();
         if(metaObjectUserSource != null){
-            this.setFieldValByName("created_id", metaObjectUserSource.getUserId(), metaObject);
-            this.setFieldValByName("created_name", metaObjectUserSource.getUserName(), metaObject);
+            this.setFieldValByName("createdId", metaObjectUserSource.getUserId(), metaObject);
+            this.setFieldValByName("createdName", metaObjectUserSource.getUserName(), metaObject);
         }
         this.setFieldValByName("createdTime", now, metaObject);
+        this.setFieldValByName("deleted", 0, metaObject);
 
     }
 
@@ -32,8 +33,8 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     public void updateFill(MetaObject metaObject) {
         Date now = new Date();
         if(metaObjectUserSource != null){
-            this.setFieldValByName("updated_id", metaObjectUserSource.getUserId(), metaObject);
-            this.setFieldValByName("updated_name", metaObjectUserSource.getUserName(), metaObject);
+            this.setFieldValByName("updatedId", metaObjectUserSource.getUserId(), metaObject);
+            this.setFieldValByName("updatedName", metaObjectUserSource.getUserName(), metaObject);
         }
         this.setFieldValByName("updatedTime", now, metaObject);
     }

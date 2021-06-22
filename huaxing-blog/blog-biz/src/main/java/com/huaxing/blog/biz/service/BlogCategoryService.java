@@ -1,7 +1,10 @@
 package com.huaxing.blog.biz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.huaxing.blog.api.vo.BlogCategoryVo;
 import com.huaxing.blog.biz.entity.BlogCategoryEntity;
+import com.huaxing.framework.core.page.PageDto;
+import com.huaxing.framework.core.response.ResponseResult;
 
 /**
  * 博文类别
@@ -12,5 +15,8 @@ import com.huaxing.blog.biz.entity.BlogCategoryEntity;
  */
 public interface BlogCategoryService extends IService<BlogCategoryEntity> {
 
+    ResponseResult<Boolean> saveOrEdit(BlogCategoryVo vo);
+
+    PageDto<BlogCategoryVo> page(BlogCategoryVo vo);
 }
 

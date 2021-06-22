@@ -19,6 +19,7 @@ package com.huaxing.resource.security.util;
 import cn.hutool.core.util.StrUtil;
 import com.huaxing.framework.core.constant.SecurityConstants;
 import com.huaxing.resource.api.dto.SysUserInfo;
+import com.huaxing.resource.security.service.SysUser;
 import lombok.experimental.UtilityClass;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -46,10 +47,10 @@ public class SecurityUtils {
 	/**
 	 * 获取用户
 	 */
-	public SysUserInfo getUser(Authentication authentication) {
+	public SysUser getUser(Authentication authentication) {
 		Object principal = authentication.getPrincipal();
-		if (principal instanceof SysUserInfo) {
-			return (SysUserInfo) principal;
+		if (principal instanceof SysUser) {
+			return (SysUser) principal;
 		}
 		return null;
 	}
@@ -57,7 +58,7 @@ public class SecurityUtils {
 	/**
 	 * 获取用户
 	 */
-	public SysUserInfo getUser() {
+	public SysUser getUser() {
 		Authentication authentication = getAuthentication();
 		if (authentication == null) {
 			return null;

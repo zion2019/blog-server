@@ -3,8 +3,10 @@ package com.huaxing.framework.core.response;
 import com.huaxing.framework.core.exception.HbException;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class ResponseResult<T> {
+public class ResponseResult<T> implements Serializable {
 	
 	public static final String SUCCESS_CODE ="0000";
 	public static final String SUCCESS_MASSAGE ="操作成功";

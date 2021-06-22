@@ -29,7 +29,7 @@ public class SwaggerConfiguration {
 
     private final SwaggerProperties swaggerProperties;
 
-    @Bean(value = "blogApi")
+    @Bean(value = "restApi")
     @Order(value = 1)
     public Docket groupRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
