@@ -24,15 +24,29 @@ public class BlogBasicEntity  extends BaseEntity implements Serializable {
 	 */
 	@TableField(value = "title")
 	private String title;
+
 	/**
 	 * 类别ID
 	 */
 	@TableField(value = "category_id")
 	private Long categoryId;
+
 	/**
 	 * 封面图片
 	 */
 	@TableField(value = "cover_img")
 	private String coverImg;
+
+	/**
+	 * 博文样式合集
+	 */
+	@TableField(value = "styles")
+	private String styles;
+
+	/**
+	 * 简介说明
+	 */
+	@TableField(value = "profile")
+	private String profile;
 
 }

@@ -9,6 +9,7 @@ import com.huaxing.blog.api.vo.BlogCategoryVo;
 import com.huaxing.blog.biz.entity.BlogCategoryEntity;
 import com.huaxing.blog.biz.mapper.BlogCategoryMapper;
 import com.huaxing.blog.biz.service.BlogCategoryService;
+import com.huaxing.framework.api.vo.SelectionVo;
 import com.huaxing.framework.core.page.PageDto;
 import com.huaxing.framework.core.response.ResponseResult;
 import com.huaxing.framework.core.utils.Assert;
@@ -16,6 +17,10 @@ import com.huaxing.framework.datasource.entity.BaseEntity;
 import com.huaxing.framework.datasource.page.PageUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 博文类别
@@ -45,5 +50,22 @@ public class BlogCategoryServiceImpl extends ServiceImpl<BlogCategoryMapper, Blo
                         .like(StringUtils.isNotBlank(vo.getName()), BlogCategoryEntity::getName, vo.getName())
                         .like(StringUtils.isNotBlank(vo.getCode()), BlogCategoryEntity::getCode, vo.getCode()));
         return PageUtil.transferPageDto(pages,BlogCategoryVo.class);
+    }
+
+    @Override
+    public List<SelectionVo> selection() {
+        List<SelectionVo> selectionVos = new ArrayList<>();
+
+        List<BlogCategoryEntity> categorys = this.list(new LambdaQueryWrapper<BlogCategoryEntity>().select(BaseEntity::getId, BlogCategoryEntity::getName));
+        if(!CollectionUtils.isEmpty(categorys)){
+            categorys.forEach(c -> {
+                SelectionVo selectionVo = new SelectionVo();
+                selectionVo.setValue(c.getId());
+                selectionVo.setLabel(c.getName());
+                selectionVos.add(selectionVo);
+            });
+        }
+
+        return selectionVos;
     }
 }

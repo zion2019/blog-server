@@ -1,0 +1,29 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huaxing.blog.biz.mapper.BlogBasicMapper">
+
+    <select id="page" resultType="com.huaxing.blog.api.vo.BlogVo">
+        SELECT
+            bb.id,
+            bb.title,
+            bb.category_id,
+            bb.cover_img,
+            bb.created_time,
+            bb.styles,
+            bb.profile,
+            bc.`name` AS categoryName
+        FROM blog_basic AS bb
+        LEFT JOIN blog_category AS bc ON bb.category_id = bc.id AND bc.deleted = 0
+        <where>
+            AND bb.deleted = 0
+            <if test="vo.categoryName != null and vo.categoryName != ''">
+                AND bc.`name` LIKE CONCAT ('%',#{vo.categoryName},'%')
+            </if>
+            <if test="vo.title != null and vo.title != ''">
+                AND bb.title LIKE CONCAT ('%',#{vo.title},'%')
+            </if>
+            <if test="vo.categoryId != null ">
+                AND bb.category_id LIKE CONCAT ('%',#{vo.categoryId},'%')
+            </if>
+        </where>
+    </select>
+</mapper>
