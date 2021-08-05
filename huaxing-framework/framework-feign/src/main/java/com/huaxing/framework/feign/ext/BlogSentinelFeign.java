@@ -81,7 +81,7 @@ public final class BlogSentinelFeign {
 					Class fallback = feignClient.fallback();
 					Class fallbackFactory = feignClient.fallbackFactory();
 
-					String beanName = feignClient.contextId();
+ 					String beanName = feignClient.contextId();
 					if (!StringUtils.hasText(beanName)) {
 						beanName = feignClient.name();
 					}

@@ -22,7 +22,7 @@ public class BlogController {
     @Autowired
     private BlogBasicService service;
 
-    @GetMapping
+    @GetMapping("/page")
     @ApiOperation("分页查询")
     public ResponseResult<PageDto<BlogVo>> pages(BlogVo vo){
         return ResponseResult.ok(service.pages(vo));

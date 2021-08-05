@@ -187,6 +187,12 @@
 		<appender-ref ref="DEBUG_FILE"/>
 	</logger>
 
+	<!-- 自动装配 report-->
+	<logger name="org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener" level="OFF">
+		<appender-ref ref="ERROR_FILE"/>
+		<appender-ref ref="DEBUG_FILE"/>
+	</logger>
+
 	<!--开发环境:打印控制台-->
 	<!-- <springProfile name="dev"> -->
 	<root level="DEBUG">

@@ -20,6 +20,7 @@ import com.huaxing.framework.feign.annotation.EnableBlogFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author lengleng
@@ -28,8 +29,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableBlogFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class App {
+public class AuthApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(App.class, args);
+		SpringApplication.run(AuthApplication.class, args);
 	}
 }

@@ -1,6 +1,7 @@
 package com.huaxing.framework.web.configuration;
 
 import com.huaxing.framework.datasource.handler.MetaObjectUserSource;
+import com.huaxing.resource.security.service.SysUser;
 import com.huaxing.resource.security.util.SecurityUtils;
 import org.springframework.stereotype.Component;
 
@@ -13,11 +14,19 @@ public class CustomMetaObjectUserSource implements MetaObjectUserSource {
 
     @Override
     public Long getUserId() {
-        return SecurityUtils.getUser().getId();
+        SysUser user = SecurityUtils.getUser();
+        if(user != null){
+            return user.getId();
+        }
+        return 1L;
     }
 
     @Override
     public String getUserName() {
-        return SecurityUtils.getUser().getUsername();
+        SysUser user = SecurityUtils.getUser();
+        if(user != null){
+            return user.getUsername();
+        }
+        return "system";
     }
 }
