@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.huaxing.blog.api.vo.BlogVo;
 import com.huaxing.blog.biz.entity.BlogBasicEntity;
 import com.huaxing.framework.core.page.PageDto;
-import com.huaxing.framework.core.response.ResponseResult;
 
 /**
  * 博文基本信息

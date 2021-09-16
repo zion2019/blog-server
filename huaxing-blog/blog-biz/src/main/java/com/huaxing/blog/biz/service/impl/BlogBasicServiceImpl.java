@@ -1,6 +1,7 @@
 package com.huaxing.blog.biz.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -11,11 +12,13 @@ import com.huaxing.blog.biz.mapper.BlogBasicMapper;
 import com.huaxing.blog.biz.service.BlogBasicService;
 import com.huaxing.blog.biz.service.BlogContentService;
 import com.huaxing.framework.core.page.PageDto;
+import com.huaxing.framework.core.response.BaseAttachmentVo;
 import com.huaxing.framework.core.utils.Assert;
 import com.huaxing.framework.datasource.page.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * 博文基本信息
@@ -33,6 +36,12 @@ public class BlogBasicServiceImpl extends ServiceImpl<BlogBasicMapper, BlogBasic
     @Override
     public PageDto<BlogVo> pages(BlogVo vo) {
         Page<BlogVo> pages = baseMapper.page(new Page<>(vo.getCurrent(),vo.getSize()),vo);
+
+        pages.getRecords().forEach(b -> {
+            b.setMessageCount(RandomUtil.randomInt(100));
+            b.setViewCount(RandomUtil.randomInt(30));
+        });
+
         return PageUtil.transferPageDto(pages,BlogVo.class);
     }
 

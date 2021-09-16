@@ -31,8 +31,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
-import static javafx.scene.input.KeyCode.R;
-
 /**
  * @author lengleng
  * @date 2019/2/1 客户端异常处理 1. 可以根据 AuthenticationException 不同细化异常处理

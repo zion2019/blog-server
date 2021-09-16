@@ -42,9 +42,15 @@ public class BlogVo  extends BasePageRequest {
     private  String content;
 
     @ApiModelProperty("创建时间")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date createdTime;
 
     @ApiModelProperty("简介说明")
     private String profile;
+
+    @ApiModelProperty("评论数")
+    private Integer messageCount;
+
+    @ApiModelProperty("热度，查看数")
+    private Integer viewCount;
 }
