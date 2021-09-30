@@ -3,6 +3,7 @@ package com.huaxing.blog.biz.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.huaxing.blog.api.vo.BlogVo;
@@ -14,6 +15,7 @@ import com.huaxing.blog.biz.service.BlogContentService;
 import com.huaxing.framework.core.page.PageDto;
 import com.huaxing.framework.core.response.BaseAttachmentVo;
 import com.huaxing.framework.core.utils.Assert;
+import com.huaxing.framework.datasource.entity.BaseEntity;
 import com.huaxing.framework.datasource.page.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -90,5 +92,13 @@ public class BlogBasicServiceImpl extends ServiceImpl<BlogBasicMapper, BlogBasic
         Assert.isNull(content,"BLOG_CONTENT_IS_EXISTS",new Object[]{basicId});
         vo.setContent(content.getBlogContent());
         return vo;
+    }
+
+    @Override
+    public Boolean release(Long basicId,Integer releaseStatus) {
+        LambdaUpdateWrapper<BlogBasicEntity> wrapper = new LambdaUpdateWrapper<>();
+        wrapper.eq(BaseEntity::getId,basicId).set(BlogBasicEntity::getRelease,releaseStatus);
+        this.update(wrapper);
+        return true;
     }
 }

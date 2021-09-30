@@ -49,4 +49,10 @@ public class BlogBasicEntity  extends BaseEntity implements Serializable {
 	@TableField(value = "profile")
 	private String profile;
 
+	/**
+	 *  上架否
+	 */
+	@TableField(value = "release")
+	private Integer release;
+
 }

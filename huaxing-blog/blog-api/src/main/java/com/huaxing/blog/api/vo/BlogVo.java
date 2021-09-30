@@ -53,4 +53,7 @@ public class BlogVo  extends BasePageRequest {
 
     @ApiModelProperty("热度，查看数")
     private Integer viewCount;
+
+    @ApiModelProperty(value = "是否为管理员")
+    private Integer admin;
 }

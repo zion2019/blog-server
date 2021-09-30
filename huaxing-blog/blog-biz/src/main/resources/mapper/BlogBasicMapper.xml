@@ -15,6 +15,7 @@
         LEFT JOIN blog_category AS bc ON bb.category_id = bc.id AND bc.deleted = 0
         <where>
             AND bb.deleted = 0
+
             <if test="vo.categoryName != null and vo.categoryName != ''">
                 AND bc.`name` LIKE CONCAT ('%',#{vo.categoryName},'%')
             </if>
@@ -23,6 +24,9 @@
             </if>
             <if test="vo.categoryId != null ">
                 AND bb.category_id LIKE CONCAT ('%',#{vo.categoryId},'%')
+            </if>
+            <if test="vo.admin == null ">
+                AND bb.release = 1
             </if>
         </where>
     </select>

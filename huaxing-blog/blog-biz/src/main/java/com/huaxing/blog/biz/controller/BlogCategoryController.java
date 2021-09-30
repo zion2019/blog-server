@@ -1,6 +1,7 @@
 package com.huaxing.blog.biz.controller;
 
 import com.huaxing.blog.api.vo.BlogCategoryVo;
+import com.huaxing.blog.biz.annotation.TempAuthControl;
 import com.huaxing.blog.biz.service.BlogCategoryService;
 import com.huaxing.framework.api.vo.SelectionVo;
 import com.huaxing.framework.core.page.PageDto;
@@ -27,12 +28,14 @@ public class BlogCategoryController {
 
     @PostMapping
     @ApiOperation("新增OR编辑博文类别")
+    @TempAuthControl
     public ResponseResult<Boolean> save(@RequestBody @Valid BlogCategoryVo vo){
         return service.saveOrEdit(vo);
     }
 
     @GetMapping
     @ApiOperation("分页查询类别")
+    @TempAuthControl
     public ResponseResult<PageDto<BlogCategoryVo>> page(BlogCategoryVo vo){
         return ResponseResult.ok(service.page(vo));
     }
@@ -45,6 +48,7 @@ public class BlogCategoryController {
 
     @DeleteMapping
     @ApiOperation("删除分类")
+    @TempAuthControl
     public ResponseResult<Boolean> removeByIds(Long id){
         return ResponseResult.ok(service.removeById(id));
     }

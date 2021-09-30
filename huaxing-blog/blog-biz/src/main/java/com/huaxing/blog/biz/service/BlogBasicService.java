@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.huaxing.blog.api.vo.BlogVo;
 import com.huaxing.blog.biz.entity.BlogBasicEntity;
 import com.huaxing.framework.core.page.PageDto;
+import com.huaxing.framework.core.response.ResponseResult;
 
 /**
  * 博文基本信息
@@ -41,5 +42,12 @@ public interface BlogBasicService extends IService<BlogBasicEntity> {
      * @return
      */
     BlogVo info(Long basicId);
+
+    /**
+     * 上架文章
+     * @param basicId
+     * @return
+     */
+    Boolean release(Long basicId,Integer releaseStatus);
 }
 
